@@ -1,0 +1,519 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Project 1 Style Guide</title>
+    <link href="css/main.css" rel="stylesheet">
+  
+</head>
+ <body>
+
+    <header>
+
+      <h1>
+       <a href ="style_guide_template.html" target= "_bank"> 
+        <img src= "images/logo.jpg" alt=" Escudo Power logo" >
+        </a> P01 - Style Guide Template
+      </h1>
+
+      <p>A template you can use to start building out your own style guides with.</p>
+
+
+      <nav>        
+        <a href="#interactive_elements"> Interactive Elements</a> |
+        <a href="#text_elements"> Text Elements</a> |
+        <a href="#combined_elements"> Combined Elements</a> |
+        <a href="product_listing_template.html"> Product Listing Template</a> |
+        <a href="checkout_template.html"> Checkout Template</a> |
+        <a href="#citations"> Citations</a> |
+      </nav>
+    </header>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements" >
+      <h2 class="headings">Interactive Elements</h2>
+
+      <!-- in-text Link // -->
+      <section class="element">
+        <h3>In-text link</h3>
+        <p>Any questions please <a href = "https://www.sfu.ca/" > contact</a> us.</p>
+        <p> See prooduct <a href = "https://www.sfu.ca/">  details</a>. </p>
+        </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+        <h3>Navigation Link</h3>
+          <div class= "nav_link_container">
+            <div class="box">
+        
+
+                <h4>CSS selector:</h4>
+                <p>.button-nav1</p>
+
+
+                <h4>Sample code:</h4>
+                <code>&lt;a href="#" class="button"&gt;Button 1&lt;/a&gt;</code>
+
+                <h4>Rendered element:</h4>
+                
+
+
+                <a class="button-nav1" href="#">Button 1</a>
+         </div>
+        <div class= "box">
+          <h4>CSS selector:</h4>
+                <p>.button-nav2</p>
+
+
+                <h4>Sample code:</h4>
+                <code>&lt;a href="#" class="button"&gt;Button 2&lt;/a&gt;</code>
+
+                <h4>Rendered element:</h4>
+                
+            <a class="button-nav2" href="#">Button 2</a>
+        </div>
+        </div>
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+
+        <form action="/action_page.php" method="get">
+          <label >Contact Us</label> <br>
+
+          <!-- Text area from: https://www.aritzia.com/en/contact-us -->
+          <textarea class="input-textarea  messagelength w-100 mb3 required" id="dwfrm_contactus_message" name="dwfrm_contactus_message" rows="8" cols="40" placeholder="Message"></textarea>
+          <br>
+
+          
+          <button type="button">Submit</button> 
+          <button type="reset" value="Reset">Reset</button> 
+          <br> <br>
+
+          <p> Citation: <a href= "https://www.aritzia.com/en/contact-us"> text area </a> | 
+          <a href= "https://www.w3schools.com/tags/att_button_type.asp"> reset/submit buttons </a>
+           |  </p>
+          <p> Styling Citation: <a href= "https://css-tricks.com/snippets/css/glowing-blue-input-highlights/"> glowing box </a> | 
+            </p>
+        </form>
+
+      </section>
+
+       <!-- Source: https://www.w3schools.com/html/html_forms.asp -->
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+                <h4>CSS selector:</h4>
+                <p>.label</p>
+                <p>.input</p>
+
+
+                <h4>Sample code:</h4>
+                <code>&lt;label&gt; Search: &lt;/label&gt;</code>
+
+                <code>&lt;input type="text" &gt; </code>
+
+                <h4>Rendered element:</h4>
+
+                <label >Search:</label>
+                <input type="text" >
+         <br> <br>
+
+         <p> Citation : <a href="https://www.w3schools.com/html/html_forms.asp"> Input field and label</a> </p>
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+
+         <h4>CSS selector:</h4>
+                <p>.input</p>
+                <p>.label</p>
+
+
+                <h4>Sample code:</h4>
+                <code>
+                    &lt;input type="radio" id="yes" name="agree" value="yes"&gt;
+               </code>
+                <code>
+                     &lt;label for="yes">Yes&lt;/label&gt;
+                </code>
+
+                <h4>Rendered element:</h4>
+        <p>Receive newsletters from us</p>
+      
+      <!--https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_radio-->
+          <input type="radio" id="yes" name="agree" value="yes">
+          <label for="yes">Yes</label><br>
+          <input type="radio" id="no" name="agree" value="no">
+          <label for="no">No</label><br>
+
+          <br> <br>
+
+         <p> Citation : <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_radio"> radio button with label</a> </p>
+      
+      </section>
+
+      <!--Source: https://www.tutorialspoint.com/How-to-use-an-image-as-a-link-in-HTML#:~:text=To%20use%20image%20as%20a,add%20the%20height%20and%20width. -->
+      <section class="element">
+        <h3>Image as a Link</h3>
+
+        <h4>CSS selector:</h4>
+                <p>.a .img</p>
+                
+
+
+                <h4>Sample code:</h4>
+                <code>
+                  &lt;a href ="https://www.sfu.ca/" target= "_bank"&gt; 
+        &lt;img src= "images/logo.jpg" alt=" Escudo Power logo" &gt;
+        &lt;/a&gt;
+                   
+               </code>
+                
+
+                <h4>Rendered element:</h4>
+        <a href ="#" target= "_bank"> 
+        <img src= "images/logo.jpg" alt=" Escudo Power logo" >
+        </a>
+     </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+    
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements" >
+      <h2 class="headings">Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+
+        <!-- source: https://www.w3schools.com/tags/tag_hn.asp// -->
+        <h1 style=  "display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;"
+ 
+  > Escudo Power</h1>
+
+  
+
+        <h2 class="exception" Style=" display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;"
+  > Our Products </h2>
+        <h3 class="exception" style="  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;"> Contact Us </h3>
+
+  <h4 style="display: block;
+  font-size: 1em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;"> DC-DC Converter – 120Vdc-24Vdc-1000W </h4>
+        
+      
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+        <p> Using the concept of innovation by design we provide Electronics Engineering Solutions for tomorrow and Emerging Technologies for local an international customers. 
+
+We could help connecting your business to the technology resources you need. </p> 
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+
+        <ol>
+            <li>Name</li>
+            <li> Product information</li>
+            <li> FAQ </li>
+        </ol>
+
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements" >
+      <h2 class="headings">Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+        <nav>
+            <a href= "http://www.sfu.ca/students/contact.html">  Home</a> |
+            <a href= "http://www.sfu.ca/students/contact.html">  Products</a> |
+            <a href= "http://www.sfu.ca/students/contact.html">  Services</a> |
+            <a href= "http://www.sfu.ca/students/contact.html">  Contact Us</a> |
+        </nav>
+      </section>
+
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+        <img src= "images/converter.png" </img>
+         <h2 class="exception" Style=" display: block;
+              font-size: 1.5em;
+              margin-top: 0.83em;
+              margin-bottom: 0.83em;
+              margin-left: 0;
+              margin-right: 0;
+              font-weight: bold;"> 
+           DC-DC Converter – 120Vdc-24Vdc-1000W</h2>
+           <h4 style="display: block;
+              font-size: 1em;
+              margin-top: 1.33em;
+              margin-bottom: 1.33em;
+              margin-left: 0;
+              margin-right: 0;
+              font-weight: bold;"> 
+              Catalog Item Number 100-1602-PL-01</h4>
+           <h3 style="  display: block;
+              font-size: 1.17em;
+              margin-top: 1em;
+              margin-bottom: 1em;
+              margin-left: 0;
+              margin-right: 0;
+              font-weight: bold;"> 
+              Features</h3>
+
+            <ul>
+                <li>Max continuous output power rating: 1000W</li>
+                <li>DC to DC converter employing switch mode technology</li>
+                <li> Input voltage range from 100Vdc to 140Vdc</li>
+                <li> Fixed output voltage: 24V dc</li>
+                <li> Industrial operating temperature range: -40C to +55C</li>
+                <li> Vertical or Horizontal installation</li>
+                <li> Soft-Start feature</li>
+                <li> Common Input/Output Negative configuration</li>
+
+            </ul>
+
+            <p> <a href="assets/DC_DC Converter.pdf"> Product Manual </a> </p>
+
+
+
+
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+        <input  type="text"  value="" autocorrect="off" placeholder="First Name">
+        <input  type="text"  value="" autocorrect="off" placeholder="Last Name"> <br> <br>
+        <input  type="text"  value="" autocorrect="off" placeholder="Street Address">
+        <input  type="text"  value="" autocorrect="off" placeholder="City"><br> <br>
+        <input  type="text"  value="" autocorrect="off" placeholder="Province">
+        <input  type="text"  value="" autocorrect="off" placeholder="Postal Code">
+        <input  type="text"  value="" autocorrect="off" placeholder="Country"><br> <br>
+
+        <input type="radio" id="credit_card" name="payment" value="credit_card">
+          <label for="crecit_card">Credit Card</label><br>
+          <input type="radio" id="paypal" name="payment" value="paypal">
+          <label for="paypal">Paypal</label><br><br>
+
+
+          <input  type="text"  value="" autocorrect="off" placeholder="Card Number"><br> <br>
+          <input  type="text"  value="" autocorrect="off" placeholder="MM/YY"><br> <br>
+          <input  type="text"  value="" autocorrect="off" placeholder="CVV"><br> <br>
+          <input  type="text"  value="" autocorrect="off" placeholder="Name on Card"><br> <br>
+          <button type="button" >Submit</button>
+      </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+        <p>DC-DC Converter – 120Vdc-24Vdc-1000W</p>
+        <p> <img src= "images/converter.png" width ="100px" height="auto" alt="converter image"</img>  $100</p>
+        
+        <br><br>
+        <p>Phase Charger</p>
+       <p> <img src= "images/phase_charger.jpeg" width ="100px" height="auto" alt="phase_charger image"</img> $100</p>
+        <br><br>
+         <h4 style="display: block;
+              font-size: 1em;
+              margin-top: 1.33em;
+              margin-bottom: 1.33em;
+              margin-left: 0;
+              margin-right: 0;
+              font-weight: bold;"> 
+              Total:       $200</h4>
+       
+
+        
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+
+        <!-- branding ideas // -->
+    <section id="interactive_elements" >
+      <h2 class="headings">Branding Ideas</h2>
+
+      
+      <section class="element">
+        <h3>What does the company offer?</h3>
+        <ul> 
+            <li>The Escudo Power designs Electronic Technologies</li>
+            <li> Specifically power conversion products and systems</li>
+            <li>Also developed medical devices for measuring vitals </li>
+            <li>clean energy </li>
+        </ul>
+        <h4> Quality Vision Statetment</h4>
+        <p> Our activity has built in sound and sustainable quality management functions that are guided by best practices.</p>
+        <h4> Quality Mission Statement</h4>
+        <p> We strive to maintain a high level of customer satisfaction through continuous assurance and improvements in our products and services by developing, documenting and maintaining a comprehensive quality management program.</p>
+        <br><br>
+        <p> Citation: Quality vision/mission <a href="https://web.archive.org/web/20180705093606/http://escudopower.ca/"> statements </a> </p>
+      </section>
+
+
+      
+      <section class="element">
+
+        <h3>Potential customers</h3>
+        <ul> 
+            <li>businessed that require/involves  energy/electrical development/products</li>
+            <li> according to their page on <a href =" https://www.apollo.io/companies/Escudo-Industries/5887f180f6512572fce91c9b"> Apollo</a> , they've worked for Schneider-Electric, Toyota, GM, Plug Power, Cellex Power, Bosch - Home Security Division</li>
+           
+        </ul>
+       
+      </section>
+
+
+      <section class="element">
+        <h3>Why buy from this company?</h3>
+
+        <ul> 
+            <li>lots of experience in the Field</li>
+            <li>knowledgeable</li>
+            <li> worked with various companies</li>
+           
+        </ul>
+      </section>
+
+    </section>
+     <!-- branding ideas END // -->
+
+
+
+    <!-- brand components// -->
+    <section id="interactive_elements" >
+      <h2 class="headings">Assemble brand components</h2>
+
+      
+      <section class="element">
+        <h3 class= "fonts" >fonts</h3>
+
+        <section class="montserrat">
+         <h1 class="h1"> Montserrat Header 1</h1>
+         <h2 class="h2"> Montserrat Header 2</h2> 
+         <p class="italics"> Montserrat Italics</p>
+         <p class="bold"> Montserrat bold</p>
+        </section>
+
+        <p class="rob"> Roboto</p>
+        <p class ="ari"> Arial </p>
+
+        <p> Citation: <a href= "https://fonts.google.com/specimen/Roboto?category=Sans+Serif,Display,Monospace&sidebar.open=true&selection.family=Roboto#standard-styles"> Montserrat</a>
+        <a href= "https://fonts.google.com/specimen/Roboto?category=Sans+Serif,Display,Monospace&sidebar.open=true&selection.family=Roboto#standard-styles"> Roboto</a></p>
+        
+      </section>
+
+
+      
+      <section class="element">
+
+        <h3>color palettes</h3>
+        <img src= "file:///C:/Users/Jenny/Desktop/IAT%20339/Project%201%20%20Style%20Guide/images/color_palette.svg">
+        
+
+       
+      </section>
+
+
+      <section class="element" id="imagery">
+        <h3>imagery, art direction</h3>
+
+        <img src="images/ajw_cards.png">
+        <img src="images/siemens.png">
+        <img src="images/siemens_cards.png">
+        <p> Citation: <a href= "https://new.siemens.com/global/en.html"> siemens header image</a> </p>
+        <img src="images/logo.jpg">
+
+      </section>
+
+
+
+      <section class="element">
+        <h3>inspirational websites</h3>
+
+        
+        <a href="http://www.mcw.com/Home" ><img src="images/mcw_logo.png" id= "mcw_logo"></a> <br>
+        <a href="https://www.ajwengineering.com/engineering-services/" ><img src="file:///C:/Users/Jenny/Desktop/IAT%20339/Project%201%20%20Style%20Guide/images/ajw_logo.svg" ></a>
+
+      </section>
+
+
+
+    </section>
+    <!-- brand components END// -->
+
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+        <li>AJW Engineering. (2020, September 26). Retrieved October 08, 2020, from <a href="https://www.ajwengineering.com/engineering-services/"> https://www.ajwengineering.com/engineering-services/.</a></li>
+        <li>Aritzia. Owner. Retrieved October 8, 2020. Retrieved from<a href="https://www.aritzia.com/en/contact-us."> https://www.aritzia.com/en/contact-us. </a> </li>
+
+        <li>Coyier, C. (2013, December 31). Glowing Blue Input Highlights: CSS-Tricks. Retrieved October 08, 2020, from <a href=" https://css-tricks.com/snippets/css/glowing-blue-input-highlights/">  https://css-tricks.com/snippets/css/glowing-blue-input-highlights/</a></li>
+
+        <li>Display Radio Buttons. (n.d.). Retrieved October 08, 2020, from <a hef="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_radio"> https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_radio</a> </li>
+
+        <li>HTML Forms. (n.d.). Retrieved October 08, 2020, from <a href="https://www.w3schools.com/html/html_forms.asp"> https://www.w3schools.com/html/html_forms.asp</a> </li>
+
+        <li>HTML type Attribute. (n.d.). Retrieved October 08, 2020, from <a href="https://www.w3schools.com/tags/att_button_type.asp "> https://www.w3schools.com/tags/att_button_type.asp </a> </li>
+
+        <li>MCW. (n.d.). Retrieved October 08, 2020, from <a href="http://www.mcw.com/Home"> http://www.mcw.com/Home</a> </li>
+
+        <li>Robertson, C. (n.d.). Roboto. Retrieved October 08, 2020, from <a href="https://fonts.google.com/specimen/Roboto?category=Sans+Serif%2CDisplay%2CMonospace "> https://fonts.google.com/specimen/Roboto?category=Sans+Serif%2CDisplay%2CMonospace </a> </li>
+
+        <li>Siemens. (n.d.). Retrieved October 08, 2020, from <a href="https://www.siemens.com/global/en.html">https://www.siemens.com/global/en.html </a>  </li>
+
+        <li>T. (2014). EscudoPower: Homepage. Retrieved October 08, 2020, from  <a href="https://web.archive.org/web/20180705093606/http://escudopower.ca/">https://web.archive.org/web/20180705093606/http://escudopower.ca/ </a></li>
+
+        <li>Ulanovsky, J., Matas, S., Pablo del Peral, J., & Le Bailly, J. (n.d.). Montserrat. Retrieved October 08, 2020, from <a href=" https://fonts.google.com/specimen/Montserrat?query=mon">  https://fonts.google.com/specimen/Montserrat?query=mon</a></li>
+      </ul>
+
+    </section>
+
+
+
+  </body>
+</html>

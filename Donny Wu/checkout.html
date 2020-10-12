@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Checkout</title>
+</head>
+
+<body>
+
+    <header class="cover">
+        <img src="https://images.unsplash.com/photo-1527314392553-2c7bded21b23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80"
+            alt="">
+        <article class="cover__overlay">
+            <p class="mid">escudo power</p>
+            <h1 class="mid">checkout</h1>
+        </article>
+    </header>
+
+    <nav class="nav">
+        <div class="mid">
+            <a href="index.html">Guide</a>
+            <a href="listings.html">Listing</a>
+            <a href="checkout.html">Checkout</a>
+            <div class="spacer"></div>
+            <img class="nav__logo" src="img/escudo-power-logo.svg" alt="Escudo Power Logo">
+        </div>
+    </nav>
+    <section class="mid checkout-form">
+        <article class="cart">
+            <h4>Cart</h4>
+            <article>
+                <h5 class="cart__item">Item</h5>
+                <p class="cart__item-price">$20.00</p>
+            </article>
+            <article>
+                <h5 class="cart__item">Item</h5>
+                <p class="cart__item-price">$20.00</p>
+            </article>
+            <article>
+                <h5 class="cart__item">Item</h5>
+                <p class="cart__item-price">$20.00</p>
+            </article>
+            <article>
+                <h5 class="cart__item">Item</h5>
+                <p class="cart__item-price">$20.00</p>
+            </article>
+            <article>
+                <h5 class="cart__item">Total</h5>
+                <p class="cart__item-price">$80.00</p>
+            </article>
+        </article>
+        <form class="pay-form" action="#">
+            <h4>Payment</h4>
+            <label>
+                Card number
+                <input type="number" />
+            </label>
+            <label>
+                Expiery date
+                <input type="number" />
+            </label>
+            <label>
+                VCC
+                <input type="number" />
+            </label>
+            <h4>Shipping</h4>
+            <label>
+                Ultra fast
+                <input type="radio" name="shipping" />
+            </label>
+            <label>
+                Kinda fast
+                <input type="radio" name="shipping" />
+            </label>
+            <label>
+                Slow
+                <input type="radio" name="shipping" />
+            </label>
+            <button class="btn-submit" type="submit">Submit</button>
+            <button class="btn-reset" type="reset">Reset</button>
+        </form>
+    </section>
+</body>
+
+</html>

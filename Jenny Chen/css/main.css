@@ -1,0 +1,264 @@
+
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+@font-face{ 
+	font-family: 'Montserrat';
+	src: url('WebFont.eot');
+	src: url('WebFont.eot?#iefix') format('embedded-opentype'),
+	     url('WebFont.woff') format('woff'),
+	     url('WebFont.ttf') format('truetype'),
+	     url('WebFont.svg#webfont') format('svg');
+}
+
+:root {
+	--main-txt-color: #333333;
+	--main-theme-color: #FF9933;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  
+  color: var(--main-txt-color);
+}
+
+/*nav styling*/
+header{
+	padding: 2rem 2rem 0rem 2rem;
+
+}
+header h1{
+	color: var(--main-theme-color); 
+	font-weight: bold;
+}
+
+nav{
+	padding: 1rem 0;
+}
+ 
+nav a, a{
+	
+	text-decoration-line: none;
+	font-weight: bold;
+	color: #333333;
+	
+}
+
+nav a:hover, a:hover{
+	
+	color: #FF9933 ;
+	font-weight: bolder;
+
+}
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+section{
+	padding: 2rem 2rem 0rem 2rem;
+}
+
+/*section h2{
+	padding: 2rem 1rem 2rem;
+	margin-bottom: 0;
+	font-weight: bold;
+	background-color: #FFCC99;
+}*/
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+.exception{
+	display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  background-color: white;
+  padding: 0;
+  color:#333333 ;
+}
+
+
+
+
+.headings  {
+  margin-top: 6rem;
+  padding: 2rem 1rem 2rem;
+	margin-bottom: 0;
+	font-weight: bold;
+	background-color: #FFCC99;
+}
+
+h3 {
+  font-style: italic;
+  margin-top: 1rem;
+  color:#FF9933 ;
+}
+
+h4 {
+  margin-bottom: 0.25rem
+}
+
+p {
+  margin-top: 0;
+}
+
+
+
+
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+.heading{
+	margin: 18.72px 0px;
+}
+.exception{
+	display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  background-color: white;
+  padding: 0;
+  color:#333333 ;
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+
+.nav_link_container{
+  display: flex;
+  
+ 
+}
+
+.nav_link_container .box{
+  border: 1px var(--main-txt-color) solid;
+  flex-grow: 1;
+  
+
+}
+
+.button-nav1 {
+  display: inline-block;
+  margin-right: 3rem;
+  padding: 1rem;
+  color: white;
+  background-color: var(--main-theme-color);
+  border: 3px solid;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+
+}
+
+.button-nav1:hover, .button-nav1:focus {
+	color: var(--main-theme-color);
+  background-color: white;
+
+  border: 3px solid var(--main-theme-color);
+}
+
+
+.button-nav2{
+  display: inline-block;
+  margin-right: 3rem;
+  padding: 1rem 2rem;
+  color: white;
+  background-color: var(--main-txt-color);
+  border: 3px solid;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+.button-nav2:hover, .button-nav2:focus {
+  color: var(--main-txt-color);
+  background-color: white;
+
+  border: 3px solid var(--main-txt-color);
+}
+
+/*Styling for submit/reset buttons*/
+
+/*Styling from: https://css-tricks.com/snippets/css/glowing-blue-input-highlights/*/
+input:focus , input:hover , textarea:focus, textarea:hover{
+  box-shadow: 0 0 5px #FFCC99 ;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #FFCC99 ;
+  
+}
+
+input, textarea{
+  outline: none;
+   padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+}
+
+button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: var(--main-txt-color)
+}
+
+
+
+#mcw_logo{
+
+	background-color: black;
+}
+
+
+h1 a img{
+	height: 2em;
+}
+
+#imagery img{
+	width: 50%;
+}
+
+a img:hover{
+	opacity: 0.5;
+}
+
+/* 
+  BRAND COMPONENTS-------------------
+*/
+
+
+
+
+
+
+
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/

@@ -1,0 +1,45 @@
+header {
+    background: linear-gradient(rgb(221, 161, 74), rgb(211, 57,51));
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+}
+
+header img {
+    margin-left: 1em;
+    width: 4em;
+    grid-row: 1;
+    grid-column: 1;
+}
+#navBar {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 40%;
+    margin-left: auto;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#navBar .navElement {
+    /*margin-top: auto;
+    margin-bottom: auto;
+    list-style: none;*/
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 0.5em;
+    align-content: center;
+    padding-top: 1.5em;
+}
+
+#navBar .navElement:hover, #navBar .navElement:active {
+    background-color: black;
+}
+
+#navBar .navElement a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+}

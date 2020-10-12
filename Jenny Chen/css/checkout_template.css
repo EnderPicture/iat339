@@ -1,0 +1,147 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+
+
+@font-face{ 
+	font-family: 'Montserrat';
+	src: url('WebFont.eot');
+	src: url('WebFont.eot?#iefix') format('embedded-opentype'),
+	     url('WebFont.woff') format('woff'),
+	     url('WebFont.ttf') format('truetype'),
+	     url('WebFont.svg#webfont') format('svg');
+}
+
+:root {
+	--main-txt-color: #333333;
+	--main-theme-color: #FF9933;
+	--light-theme-color:#E6E7E8;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  
+  color: var(--main-txt-color);
+}
+
+/*nav styling*/
+body{
+	padding: 2rem 2rem 0rem 2rem;
+
+}
+header h1{
+	color: var(--main-theme-color); 
+	font-weight: bold;
+}
+
+nav{
+	padding: 1rem 0;
+}
+ 
+nav a, a{
+	
+	text-decoration-line: none;
+	font-weight: bold;
+	color: #333333;
+	
+}
+
+nav a:hover, a:hover{
+	
+	color: #FF9933 ;
+	font-weight: bolder;
+
+}
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+section{
+	padding: 2rem 2rem 0rem 2rem;
+}
+
+h1 a img{
+	height: 2em;
+}
+
+
+
+a img:hover{
+	opacity: 0.5;
+}
+
+
+/*Checkout style*/
+
+.item_box, .total_description_box{
+	display: inline-flex;
+}
+
+.price_box, .total_price_box{
+	position: absolute;
+	right: 0;
+	margin-right: 50%;
+	padding: 1em;
+}
+
+.total_box{
+	border-top: 2px var(--main-txt-color) solid;
+	margin-top: 1em;
+}
+
+.checkout_container{
+	padding-bottom: 3em;
+	
+}
+
+
+/*payment style*/
+
+.payment_container{
+	background-color: var(--light-theme-color);
+	padding: 2em; 
+}
+
+input:focus , input:hover , textarea:focus, textarea:hover{
+  box-shadow: 0 0 5px #FFCC99 ;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #FFCC99 ;
+  
+}
+
+input, textarea{
+  outline: none;
+   padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #FFCC99 ;
+}
+
+
+.button-nav1 {
+  display: inline-block;
+  margin-right: 3rem;
+  padding: 1rem;
+  color: white;
+  background-color: var(--main-theme-color);
+  border: none;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+
+}
+
+.button-nav1:hover, .button-nav1:focus {
+	color: var(--main-theme-color);
+  background-color: white;
+
+  border: none;
+}
+
+
+
+
+

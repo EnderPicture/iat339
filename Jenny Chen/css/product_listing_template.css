@@ -1,0 +1,108 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+
+
+@font-face{ 
+	font-family: 'Montserrat';
+	src: url('WebFont.eot');
+	src: url('WebFont.eot?#iefix') format('embedded-opentype'),
+	     url('WebFont.woff') format('woff'),
+	     url('WebFont.ttf') format('truetype'),
+	     url('WebFont.svg#webfont') format('svg');
+}
+
+:root {
+	--main-txt-color: #333333;
+	--main-theme-color: #FF9933;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  
+  color: var(--main-txt-color);
+}
+
+/*nav styling*/
+body{
+	padding: 2rem 2rem 0rem 2rem;
+
+}
+header h1{
+	color: var(--main-theme-color); 
+	font-weight: bold;
+}
+
+nav{
+	padding: 1rem 0;
+}
+ 
+nav a, a{
+	
+	text-decoration-line: none;
+	font-weight: bold;
+	color: #333333;
+	
+}
+
+nav a:hover, a:hover{
+	
+	color: #FF9933 ;
+	font-weight: bolder;
+
+}
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+section{
+	padding: 2rem 2rem 0rem 2rem;
+}
+
+h1 a img{
+	height: 2em;
+}
+
+
+
+a img:hover{
+	opacity: 0.5;
+}
+
+
+/*Product services style*/
+
+@media(min-width: 1279px){
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+
+}
+
+}
+
+.container div{
+	border: 1px var(--main-txt-color) solid;
+	
+}
+
+.product_container{
+	
+	flex-basis: 25%;
+	
+}
+
+.description_box h2 ,  .description_box p{
+	padding: 0.5em;
+
+}
+.img_box img{
+	object-fit: contain;
+	width: 50%;
+}
+

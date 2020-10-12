@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title>IAT 339 P01 Style Guide</title>
+        <!--Copied this code from my P01 Weekly Submission-->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <link rel = "stylesheet" href = "css/main.css">
+        <link rel = "stylesheet" href = "css/grid.css">
+        <link rel = "stylesheet" href = "css/navigation.css">
+    </head>
+    <body>
+        <header>
+            <a href = "index.html"><img src = "img/logo.jpeg" alt = "escudoPowerLogo"></a>
+            <nav id = "navBar">
+                <div class = "navElement">
+                    <a href = "index.html">Style Guide</a>
+                </div>
+                <div class = "navElement">
+                    <a href = "productPage.html">Product Page</a>
+                </div>
+                <div class = "navElement">
+                    <a href = "multiProduct.html">Products</a>
+                </div>
+                <div class = "navElement">
+                    <a href = "checkout.html">Checkout</a>
+                </div>
+            </nav>
+        </header>
+        <section id = "interEle">
+            <p>Section CSS id: "interEle"</p>
+            <h1>Interactive Elements</h1>
+            <h2>In-text Link</h2>
+            <h3>Code</h3>
+            <pre>
+                <code>
+                    &lt;a href = "#"&gt;In text link&lt;/a&gt; &lt;br&gt;
+                </code>
+            </pre>
+            <a href = "#" id = "inText">In text link</a><br>
+
+            <h2>Navigation Link</h2>
+            <h3>Code</h3>
+            <pre>
+                <code>
+                    &lt;a href = "#"&gt;Navigation&lt;/a&gt;
+                </code>
+            </pre>
+            <nav>
+                <a href = "#">Navigation</a>
+            </nav>
+
+            <h2>Form containing text box, radio button, submit and reset</h2>
+            <h3>Code</h3>
+            <pre>
+                <code>
+                    &lt;form&gt;
+                        &lt;label for = "formInput"&gt;Text Input Field: &lt;/label&gt;
+                        &lt;input type = "text" id = "formInput"&gt;
+                        &lt;label for = "formRadio"&gt;Radio Button&lt;/label&gt;
+                        &lt;input type = "radio" id = "formRadio"&gt;
+                        &lt;input type = "submit" id = "formSubmit"&gt;
+                        &lt;input type = "reset" id = "formReset"&gt;
+                    &lt;/form&gt;
+                </code>
+            </pre>
+            <form>
+                <!--For the input tag I used W3Schools https://www.w3schools.com/tags/tag_input.asp-->
+                <label for = "formInput">Text Input Field: </label>
+                <input type = "text" id = "formInput" name = "styleGuide"><br>
+                <label for = "formRadio">Radio Button</label>
+                <input type = "radio" id = "formRadio" value = "default" checked><br>
+                <input type = "submit" id = "formSubmit" name = "submit" value = "Send">
+                <input type = "reset" id = "formReset" name = "reset" value = "Reset">
+            </form>
+
+            <h2>Linked Image</h2><br>
+            <h3>Code</h3>
+            <pre>
+                <code>
+                    &lt;a href = "#"&gt;&lt;img src = "img/temp.png" alt = "black box"&gt;&lt;/a&gt;
+                </code>
+            </pre>
+            <a href = "#"><img src = "img/temp.png" alt = "black box"></a>
+        </section>
+
+        <section id = "textEle">
+            <p>Section CSS id: "textEle"</p>
+            <h1>Text Elements</h1>
+            <h3>Code</h3>
+            <pre>
+                <code>
+                    &lt;h1&gt;Heading 1&lt;/h1&gt;
+                    &lt;h2&gt;Heading 2&lt;/h2&gt;
+                    &lt;h3&gt;Heading 3&lt;/h3&gt;
+                    &lt;h4&gt;Heading 4&lt;/h4&gt;
+                    &lt;p&gt;Paragraph&lt;/p&gt;
+                </code>
+            </pre>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <p>Paragraph</p>
+        </section>
+
+        <section id = "combEle">
+            <p>Section CSS id: "combEle"</p>
+            <h1>Combined Elements</h1>
+            <h3>Code</h3>
+            <pre>
+                <code>
+                    &lt;a href = "#"&gt;Page 1&lt;/a&gt;
+                    &lt;a href = "#"&gt;Page 2&lt;/a&gt;
+                    &lt;a href = "#"&gt;Page 3&lt;/a&gt;
+                    &lt;a href = "#"&gt;Page 4&lt;/a&gt;
+                </code>
+            </pre>
+            <h2>Main Navigation</h2>
+            <nav>
+                <a href = "#">Page 1</a>
+                <a href = "#">Page 2</a>
+                <a href = "#">Page 3</a>
+                <a href = "#">Page 4</a>
+            </nav>
+
+
+            <h2>A product listing</h2>
+            <h3>Code</h3>
+            <pre>
+                <code>
+                    &lt;div class = "productListing"&gt;
+                        &lt;h3&gt;Product Name&lt;/h3&gt;
+                        &lt;p&gt;Insert Image Here&lt;/p&gt;
+                        &lt;p&gt;$cost&lt;/p&gt;
+                        &lt;a href = "#"&gt;Link to detailed description&lt;/a&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+            <div class = "productListing">
+                <h3>Product Name</h3>
+                <p>Insert Image here</p>
+                <p>$cost</p>
+                <a href = #>Link to detailed description</a>
+            </div>
+
+            <h2>Payment form</h2>
+            <h3>Code</h3>
+            <pre>
+                <code>
+                    &lt;form id = "payment">
+                        &lt;fieldset class = "userInfo"&gt;
+                            &lt;label for = "formFN"&gt;First Name:&lt;/label&gt;&lt;br&gt;
+                            &lt;input type = "text" id = "formFN"&gt;&lt;br&gt;
+                            
+                            &lt;label for = "formLN"&gt;Last Name:&lt;/label&gt;&lt;br&gt;
+                            &lt;input type = "text" id = "formLN"&gt;&lt;br&gt;
+                        &lt;/fieldset&gt;
+                        
+                        &lt;fieldset class = "paymentChoice"&gt;
+                            &lt;label for = "formCreditCard"&gt;Credit Card&lt;/label&gt;
+                            &lt;input type = "radio" id = "formCreditCard" name = "payment" value = "credit-card" checked&gt;&lt;br&gt;
+                            &lt;label for = "formPayPal"&gt;PayPal&lt;/label&gt;
+                            &lt;input type = "radio" id = "formPayPal" name = "payment" value = "paypal"&gt;
+                        &lt;/fieldset&gt;
+
+                        &lt;fieldset class = "paymentInfo"&gt;
+                            &lt;label for = "formCreditNum"&gt;Credit Card Number&lt;/label&gt;
+                            &lt;input type = "number" id = "formCreditNum"&gt;&lt;br&gt;
+                            &lt;label for = "formCreditCVV"&gt;Credit Card CVV&lt;/label&gt;
+                            &lt;input type = "number" id = "formCreditCVV" max = "999"&gt;&lt;br&gt;
+                            &lt;label for = "formCreditDate"&gt;Expiration Date&lt;/label&gt;
+                            &lt;input type = "month" id = "formCreditDate"&gt;&lt;br&gt;
+                        &lt;/fieldset&gt;
+
+                        &lt;fieldset class = "shippingChoice"&gt;
+                            &lt;label for = "formCheapShip"&gt;Cheap but slow Shipping&lt;/label&gt;
+                            &lt;input type = "radio" id = "formCheapShip" name = "shipping" value = "cheapShipping" checked&gt;&lt;br&gt;
+                            &lt;label for = "formExpenShip"&gt;Expensive but fast Shipping&lt;/label&gt;
+                            &lt;input type = "radio" id = "formExpenShip" name = "shipping" value = "expensiveShipping"&gt;
+                        &lt;/fieldset&gt;
+
+                        &lt;fieldset class = "shippingInfo"&gt;
+                            &lt;label for = "address"&gt;Shipping Address:&lt;/label&gt;
+                            &lt;input type = "text" name = "address" id = "address" required&gt;&lt;br&gt;
+                            &lt;label for = "province"&gt;Province&lt;/label&gt;
+                            &lt;input type = "text" name = "province" id = "province" required&gt;&lt;br&gt;
+                        &lt;/fieldset&gt;
+            
+                        &lt;fieldset class = "action"&gt;
+                            &lt;input type = "submit"&gt;
+                            &lt;input type = "reset"&gt;
+                        &lt;/fieldset&gt;
+                    &lt;/form&gt;
+                </code>
+            </pre>
+
+            <form id = "payment">
+                <fieldset class = "userInfo">
+                    <label for = "formFN">First Name:</label>
+                    <input type = "text" id = "formFN" required>
+                    
+                    <label for = "formLN">Last Name:</label>
+                    <input type = "text" id = "formLN" required>
+
+                </fieldset>
+
+                <fieldset class = "paymentChoice">
+                    <label for = "formCreditCard">Credit Card</label>
+                    <input type = "radio" id = "formCreditCard" name = "payment" value = "credit-card" checked><br>
+                    <label for = "formPayPal">PayPal</label>
+                    <input type = "radio" id = "formPayPal" name = "payment" value = "paypal">
+                </fieldset>
+
+                <fieldset class = "paymentInfo">
+                    <label for = "formCreditNum">Credit Card Number</label>
+                    <input type = "number" id = "formCreditNum"><br>
+                    <label for = "formCreditCVV">Credit Card CVV</label>
+                    <input type = "number" id = "formCreditCVV" max = "999"><br>
+                    <label for = "formCreditDate">Expiration Date</label>
+                    <input type = "month" id = "formCreditDate"><br>
+                </fieldset>
+
+                <fieldset class = "shippingChoice">
+                    <label for = "formCheapShip">Cheap but slow Shipping</label>
+                    <input type = "radio" id = "formCheapShip" name = "shipping" value = "cheapShipping" checked><br>
+                    <label for = "formExpenShip">Expensive but fast Shipping</label>
+                    <input type = "radio" id = "formExpenShip" name = "shipping" value = "expensiveShipping">
+                </fieldset>
+
+                <fieldset class = "shippingInfo">
+                    <label for = "address">Shipping Address</label>
+                    <input type = "text" name = "address" id = "address" required><br>
+                    
+                    <label for = "province">Province</label>
+                    <input type = "text" name = "province" id = "province" required><br>
+                </fieldset>
+
+                <fieldset class = "action">
+                    <input type = "submit">
+                    <input type = "reset">
+                </fieldset>
+            </form>
+
+            <h2>Checkout Cart</h2>
+            <h3>Code</h3>
+            <pre>
+                <code>
+                    &lt;div id = "cart"&gt;
+                        &lt;div class = "itemInCart shoppingGrid"&gt;
+                            &lt;img class = "picOfItem" src = "img/escudoPhaseChangerPL-01num004.jpeg" alt = "Escudo Power Phase Changer"&gt;
+                            &lt;h5 class = "titleOfItem"&gt;Phase Changer 120VAC&lt;/h5&gt;
+                            &lt;p class = "costOfItem"&gt;Cost = $5&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class = "itemInCart shoppingGrid"&gt;
+                            &lt;img class = "picOfItem" src = "img/escudoPhaseChangerPL-01num007.jpeg" alt = "Escudo Power Phase Changer"&gt;
+                            &lt;h5 class = "titleOfItem"&gt;Phase Changer 220VAC&lt;/h5&gt;
+                            &lt;p class = "costOfItem"&gt;Cost = $5&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class = "totalOfCart"&gt;
+                            &lt;h5&gt;Number of Items = 2&lt;/h5&gt;
+                            &lt;p&gt;Total cost = $10&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+            <div id = "cart">
+                <div class = "itemInCart shoppingGrid">
+                    <img class = "picOfItem" src = "img/escudoPhaseChangerPL-01num004.jpeg" alt = "Escudo Power Phase Changer">
+                    <h5 class = "titleOfItem">Phase Changer 120VAC</h5>
+                    <p class = "costOfItem">Cost = $5</p>
+                </div>
+                <div class = "itemInCart shoppingGrid">
+                    <img class = "picOfItem" src = "img/escudoPhaseChangerPL-01num007.jpeg" alt = "Escudo Power Phase Changer">
+                    <h5 class = "titleOfItem">Phase Changer 220VAC</h5>
+                    <p class = "costOfItem">Cost = $5</p>
+                </div>
+                <div class = "totalOfCart">
+                    <h5>Number of Items = 2</h5>
+                    <p>Total cost = $10</p>
+                </div>
+            </div>
+        </section>
+
+        <section id = "branding">
+            <p>Section CSS id: "branding"</p>
+            <h1>Basic Branding Ideas</h1>
+            <p>Escudo Power provides electrical services to many different companies based on their needs. As a basis, Escudo Power is focused primarily on
+                renewable energy and providing solutions that allow for reduced long term impact on the planet.
+            </p>
+            <p>The company is a solution provider to potential companies, they wish to find solid solutions that help the environment and reduce the 
+                amount of non-renewable energy we're using.
+            </p>
+
+            <p>This is Escudo Power's logo, and as such I feel that the colours to use would be heavily based around orange and white as they are the colours on their logo, 
+                as well as using a slimmer sans serif font as it is the same style of Font that is used on their logo.
+            </p>
+            <img src = "https://pbs.twimg.com/profile_images/623737500100460544/Vl8nc2VK_400x400.jpg" alt = "Escudo Power Logo">
+            <p>A font that I was also thinking about would be Raleway by Google Fonts <a href = "https://fonts.google.com/specimen/Raleway">https://fonts.google.com/specimen/Raleway</a></p>
+        </section>
+    </body>
+</html>
