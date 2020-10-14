@@ -1,0 +1,83 @@
+form#payment {
+    margin-left: 1em;
+    border: 1px solid #c6c7cc;
+    border-radius: 5px;
+    overflow: hidden;
+    width:25%;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    border-radius: 5px;
+    margin: 0;
+}
+
+.userInfo, .paymentInfo, .paymentChoice, .shippingChoice, .shippingInfo, .action {
+    padding: 2em 2em 0 2em;
+    background-color: rgba(240, 240, 240, 0.75);
+}
+
+.userInfo label, .paymentInfo label, .shippingInfo label{
+    color: black;
+    display:block;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.paymentChoice label, .shippingChoice label{
+    color:black;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.userInfo input, .paymentInfo input, .shippingInfo input {
+    background: #fff;
+    border: 1px solid #c6c7cc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+    color: #636466;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    width: 100%;
+}
+
+.action input{
+    background: linear-gradient(rgb(221, 161, 74), rgb(211, 57, 51));
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    float: left;
+    padding: 1em 2em;
+    margin-right: 1em;
+    margin-bottom: 2em;
+}
+
+/*Used the tutorial from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio to come up with the code for this area*/
+.paymentChoice input, .shippingChoice input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+    
+    cursor: pointer;
+
+    position: relative;
+    top: 4px;
+}
+
+.paymentChoice input:checked, .shippingChoice input:checked {
+    border: 6px solid rgb(220, 113, 39);
+}
