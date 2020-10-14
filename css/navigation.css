@@ -18,6 +18,7 @@
     height: 100%;
     padding: 0.5rem;
     background-color: #0008;
+    object-fit: contain;
 }
 .nav > .mid {
     height: 100%;
