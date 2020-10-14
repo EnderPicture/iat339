@@ -94,7 +94,6 @@ a:focus {
     margin-right: auto;
     margin-left: auto;
     width: 60vw;
-    overflow: hidden;
 }
 @media screen and (max-width: 50rem) {
     .mid {
@@ -442,4 +441,8 @@ p > code {
 }
 .bottom-margin {
     margin-bottom: 5rem;
+}
+
+.long-link {
+    overflow: hidden;
 }
