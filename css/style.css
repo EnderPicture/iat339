@@ -406,29 +406,29 @@ p > code {
     padding: 1rem;
 }
 .colour-1 {
-    background-color: #0d1321;
+    background-color: #333333;
     color: #fff;
 }
 .colour-2 {
-    background-color: #ffeddf;
+    background-color: #fa5f1a;
 }
 .colour-3 {
-    background-color: #f45a17;
+    background-color: #ffcc99;
 }
 .colour-4 {
-    background-color: #660000;
-    color: #fff;
+    background-color: #f7f0f0;
+    
 }
 .colour-5 {
-    background-color: #c5d86d;
+    background-color: #ffffff;
 }
-.colour-6 {
-    background-color: #708122;
+/*.colour-6 {
+    background-color: black;
 }
 .colour-7 {
-    background-color: #afe0ce;
+    background-color: black;
 }
-
+*/
 .checkout-form {
     margin-top: 5rem;
     display: flex;
