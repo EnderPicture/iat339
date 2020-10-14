@@ -53,3 +53,6 @@
     opacity: 0.8;
     transition: 0.1s ease;
 }
+article > .nav {
+    position: initial;
+}
