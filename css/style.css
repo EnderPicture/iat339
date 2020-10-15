@@ -203,21 +203,25 @@ a:focus {
 }
 
 button {
-    border: none;
-    border-radius: 0.5rem;
+    /*border: none;*/
+    /*border-radius: 0.5rem;*/
+    border: solid;
     padding: 0.5rem 2rem;
 
     background-color: #0d1321;
     color: #ffffff;
     transition: 0.4s ease;
     font-weight: 900;
-    box-shadow: 0 0 0 0px #0d1321;
+    /*box-shadow: 0 0 0 0px #0d1321;*/
     width: 10rem;
+    
+
 }
 button:hover,
 button:focus {
-    box-shadow: 0 0 0 3px #0d1321;
+    /*box-shadow: 0 0 0 3px #0d1321;*/
     transition: 0.1s ease;
+    cursor:pointer;
 }
 
 button:focus {
@@ -226,18 +230,29 @@ button:focus {
 }
 
 .btn-reset {
-    background-color: #660000;
-    box-shadow: 0 0 0 0px #660000;
+    background-color: #333333;
+    border-color: #333333;
+    /*box-shadow: 0 0 0 0px #333333;*/
 }
 .btn-reset:hover {
-    box-shadow: 0 0 0 3px #660000;
+    /*box-shadow: 0 0 0 3px #333333;*/
+    background: none;
+    border-color: #333333;
+    color:#333333;
+    
 }
 .btn-submit {
-    background-color: #708122;
-    box-shadow: 0 0 0 0px #708122;
+    background-color: #ff9933;
+    /*box-shadow: 0 0 0 0px #fa5f1a;*/
+    border-color: #ff9933;
 }
 .btn-submit:hover {
-    box-shadow: 0 0 0 3px #708122;
+    /*box-shadow: 0 0 0 3px #fa5f1a;*/
+
+    background: none;
+    color: #ff9933 ;
+    border-color: #ff9933;
+
 }
 
 form {
@@ -408,7 +423,7 @@ p > code {
     color: #fff;
 }
 .colour-2 {
-    background-color: #fa5f1a;
+    background-color: #ff9933;
 }
 .colour-3 {
     background-color: #ffcc99;
