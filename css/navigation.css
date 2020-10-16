@@ -6,6 +6,7 @@
     
     height: 3rem;
     z-index: 100;
+    padding: 2rem;
 
     /* only for looks */
     /* This is not an error. If it does not work it will not effect anything */
