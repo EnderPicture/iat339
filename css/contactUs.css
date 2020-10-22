@@ -97,3 +97,20 @@ textarea:focus {
     max-width: 25%;
     background-color: #FF9933;
 }
+
+@media screen and (max-width: 44rem) {
+    .contact-us-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 2fr;
+    }
+
+    .contactInfo {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .custInfo {
+        grid-row: 1;
+        grid-column: 1;
+    }
+}
