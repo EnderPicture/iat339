@@ -3,136 +3,145 @@
 
 /* used https://css-tricks.com/snippets/css/a-guide-to-flexbox/ from time to time if I forgets an attribute */
 /* https://www.w3schools.com/cssref/func_calc.asp */
+
+:root {
+  --txt-color: #333333;
+  --main-theme-color: #ff9933;
+  --light-main-theme-color: #ffcc99;
+  --highlight-light-gray: #f2f2f2;
+  --highlight-dark-gray: #858889;
+}
+
 * {
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-    color: #0d1321;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: var(--txt-color);
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    background: #ffffff;
+  margin: 0;
+  background: #ffffff;
 }
 img {
-    object-fit: cover;
-    max-width: 100%;
+  object-fit: cover;
+  max-width: 100%;
 }
 /* https://spigotdesign.com/smooth-scroll-offset-anchor-links-with-css/ */
 :target:before {
-    content: "";
-    display: block;
-    height: 3rem;
-    margin: -3rem 0 0;
+  content: "";
+  display: block;
+  height: 3rem;
+  margin: -3rem 0 0;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    margin-top: 1em;
-    margin-bottom: 0;
+  margin-top: 1em;
+  margin-bottom: 0;
 }
 h1 {
-    font-size: 5rem;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 900;
+  font-size: 5rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 900;
 }
 h2 {
-    font-size: 4rem;
-    position: relative;
+  font-size: 4rem;
+  position: relative;
 }
 h2::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 1rem;
-    background-color: #0d1321;
-    opacity: 0.1;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 1rem;
+  background-color: #0d1321;
+  opacity: 0.1;
 }
 h3 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 h4 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 @media screen and (max-width: 50rem) {
-    h1 {
-        font-size: 3rem;
-    }
-    h2 {
-        font-size: 2.5rem;
-    }
-    h3 {
-        font-size: 2rem;
-    }
-    h4 {
-        font-size: 1.5rem;
-    }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
 }
 a {
-    text-decoration: none;
-    font-weight: 900;
-    transition: 0.4s ease;
-    display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  transition: 0.4s ease;
+  display: inline-block;
 }
 a:hover,
 a:focus {
-    transform: translateY(-0.1rem);
-    transition: 0.1s ease;
+  transform: translateY(-0.1rem);
+  transition: 0.1s ease;
 }
 a:focus {
-    opacity: 0.8;
-    transition: 0.1s ease;
+  opacity: 0.8;
+  transition: 0.1s ease;
 }
 
 .mid {
-    min-width: 30rem;
-    max-width: 90rem;
-    margin-right: auto;
-    margin-left: auto;
-    width: 60vw;
+  min-width: 30rem;
+  max-width: 90rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 60vw;
 }
 @media screen and (max-width: 50rem) {
-    .mid {
-        min-width: initial;
-        max-width: initial;
-        margin-right: 1rem;
-        margin-left: 1rem;
-        width: auto;
-    }
+  .mid {
+    min-width: initial;
+    max-width: initial;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: auto;
+  }
 }
 .cover {
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 .cover__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(#0003, #0009);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#0003, #0009);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .cover__overlay > * {
-    color: #ffffff;
+  color: #ffffff;
 }
 .cover__overlay > h1 {
-    margin-bottom: 2rem;
-    margin-top: -1rem;
+  margin-bottom: 2rem;
+  margin-top: -1rem;
 }
 .cover__overlay > p {
-    font-weight: 900;
+  font-weight: 900;
 }
 .cover > img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 /*
 .nav {
@@ -143,12 +152,12 @@ a:focus {
     z-index: 100;
 
     /* only for looks */
-    /* This is not an error. If it does not work it will not effect anything */
-    /* https://caniuse.com/?search=backdrop-filter */
-    /*backdrop-filter: blur(20px);
+/* This is not an error. If it does not work it will not effect anything */
+/* https://caniuse.com/?search=backdrop-filter */
+/*backdrop-filter: blur(20px);
     /* --------------------------------- */
-    
-    /*box-shadow: 0 01px 01px 0 #0001, 0 02px 02px 0 #0001, 0 04px 04px 0 #0001,
+
+/*box-shadow: 0 01px 01px 0 #0001, 0 02px 02px 0 #0001, 0 04px 04px 0 #0001,
         0 08px 08px 0 #0001, 0 16px 16px 0 #0001, 0 32px 32px 0 #0001;
 }
 .nav__logo {
@@ -188,237 +197,247 @@ a:focus {
     transition: 0.1s ease;
 }*/
 .img-link {
-    overflow: hidden;
+  overflow: hidden;
 }
 .img-link > img {
-    transition: 0.4s ease;
-    transform: scale(1.05);
+  transition: 0.4s ease;
+  transform: scale(1.05);
 }
 .img-link:hover {
-    border-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
 .img-link:hover > img {
-    transform: scale(1.01);
-    transition: 0.1s ease;
+  transform: scale(1.01);
+  transition: 0.1s ease;
 }
 
 button {
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.5rem 2rem;
+  /*border: none;*/
+  border-radius: 0.15rem;
+  border: 0.15rem solid;
+  padding: 0.75rem 1rem;
 
-    background-color: #0d1321;
-    color: #ffffff;
-    transition: 0.4s ease;
-    font-weight: 900;
-    box-shadow: 0 0 0 0px #0d1321;
-    width: 10rem;
+  background-color: #0d1321;
+  color: #ffffff;
+  transition: 0.4s ease;
+  font-weight: 900;
+  /*box-shadow: 0 0 0 0px #0d1321;*/
+  width: 10rem;
 }
 button:hover,
 button:focus {
-    box-shadow: 0 0 0 3px #0d1321;
-    transition: 0.1s ease;
+  /*box-shadow: 0 0 0 3px #0d1321;*/
+  transition: 0.1s ease;
+  cursor: pointer;
 }
 
 button:focus {
-    opacity: 0.8;
-    outline: none;
+  opacity: 0.8;
+  outline: none;
 }
 
 .btn-reset {
-    background-color: #660000;
-    box-shadow: 0 0 0 0px #660000;
+  background-color: #333333;
+  border-color: #333333;
+  /*box-shadow: 0 0 0 0px #333333;*/
 }
 .btn-reset:hover {
-    box-shadow: 0 0 0 3px #660000;
+  /*box-shadow: 0 0 0 3px #333333;*/
+  background: none;
+  border-color: #333333;
+  color: #333333;
 }
 .btn-submit {
-    background-color: #708122;
-    box-shadow: 0 0 0 0px #708122;
+  background-color: #ff9933;
+  /*box-shadow: 0 0 0 0px #fa5f1a;*/
+  border-color: #ff9933;
 }
 .btn-submit:hover {
-    box-shadow: 0 0 0 3px #708122;
+  /*box-shadow: 0 0 0 3px #fa5f1a;*/
+
+  background: none;
+  color: #ff9933;
+  border-color: #ff9933;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    background-color: #0d132110;
-    padding: 1rem;
-    border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #0d132110;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 form > h4 {
-    margin: 0;
-    margin-bottom: 1rem;
+  margin: 0;
+  margin-bottom: 1rem;
 }
 form > button {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 label {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2rem;
-    font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 input {
-    border: 2px solid #0d132120;
-    margin-bottom: 1rem;
-    margin-top: 0.25rem;
-    max-width: 20rem;
-    border-radius: 0.5rem;
-    padding: 0.25rem 1rem;
-    transition: 0.4s ease;
+  border: 2px solid #0d132120;
+  margin-bottom: 1rem;
+  margin-top: 0.25rem;
+  max-width: 20rem;
+  border-radius: 0.5rem;
+  padding: 0.25rem 1rem;
+  transition: 0.4s ease;
 }
-input[type=radio] {
-    border-radius: 50%;
-    overflow: hidden;
+input[type="radio"] {
+  border-radius: 50%;
+  overflow: hidden;
 }
 input:hover,
 input:focus {
-    box-shadow: 0 0 0 3px #0d132120;
-    transition: 0.1s ease;
+  box-shadow: 0 0 0 3px #0d132120;
+  transition: 0.1s ease;
 }
 input:focus {
-    border: 2px solid #f45a17;
-    box-shadow: 0 0 0 3px #f45a17;
-    transition: 0.1s ease;
-    outline: none;
+  border: 2px solid #f45a17;
+  box-shadow: 0 0 0 3px #f45a17;
+  transition: 0.1s ease;
+  outline: none;
 }
 pre {
-    background-color: #0d132110;
-    padding: 0 1rem;
-    border-radius: 0.5rem;
-    overflow: hidden;
+  background-color: #0d132110;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 p > code {
-    background-color: #0d132110;
-    padding: 0 1rem;
-    border-radius: 0.5rem;
-    overflow: hidden;
+  background-color: #0d132110;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 .product-item {
-    width: 100%;
+  width: 100%;
 }
 .product-item > a {
-    display: flex;
-    background-color: #ffeddf;
-    flex-direction: column;
-    overflow: hidden;
-    border-radius: 0.5rem;
-    box-shadow: 0 01px 01px 0 #0001, 0 02px 02px 0 #0001, 0 04px 04px 0 #0001,
-        0 08px 08px 0 #0001, 0 16px 16px 0 #0001, 0 32px 32px 0 #0001;
+  display: flex;
+  background-color: #ffeddf;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 01px 01px 0 #0001, 0 02px 02px 0 #0001, 0 04px 04px 0 #0001,
+    0 08px 08px 0 #0001, 0 16px 16px 0 #0001, 0 32px 32px 0 #0001;
 }
 .product-item:hover > a {
-    box-shadow: 0 01px 01px 0 #0002, 0 02px 02px 0 #0002, 0 04px 04px 0 #0002,
-        0 08px 08px 0 #0002, 0 16px 16px 0 #0002, 0 32px 32px 0 #0002;
+  box-shadow: 0 01px 01px 0 #0002, 0 02px 02px 0 #0002, 0 04px 04px 0 #0002,
+    0 08px 08px 0 #0002, 0 16px 16px 0 #0002, 0 32px 32px 0 #0002;
 }
 .product-item__img {
-    width: 100%;
-    height: 10rem;
+  width: 100%;
+  height: 10rem;
 }
 .product-item__name {
-    font-size: 1.5rem;
-    margin: 0 1rem;
-    margin-top: 1rem;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  margin-top: 1rem;
 }
 .product-item__price {
-    margin: 0 1rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
+  margin: 0 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 .product-item__desc {
-    font-weight: 100;
-    margin: 0 1rem;
-    margin-bottom: 1rem;
+  font-weight: 100;
+  margin: 0 1rem;
+  margin-bottom: 1rem;
 }
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    gap: 2rem;
-    row-gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  gap: 2rem;
+  row-gap: 3rem;
 }
 @media screen and (max-width: 90rem) {
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media screen and (max-width: 50rem) {
-    .product-grid {
-        gap: 1rem;
-        row-gap: 2rem;
-    }
+  .product-grid {
+    gap: 1rem;
+    row-gap: 2rem;
+  }
 }
 @media screen and (max-width: 37rem) {
-    .product-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .font-opensans {
-    font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .font-ubuntu {
-    font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 .spacer {
-    flex: 1;
+  flex: 1;
 }
 
 .cart {
-    background-color: #0d132110;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    max-width: 20rem;
+  background-color: #0d132110;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  max-width: 20rem;
 }
 .cart > article {
-    border-bottom: 2px solid #0d132110;
-    display: flex;
-    align-items: baseline;
+  border-bottom: 2px solid #0d132110;
+  display: flex;
+  align-items: baseline;
 }
 .cart > h4 {
-    margin: 0;
+  margin: 0;
 }
 .cart__item {
-    margin-bottom: 0;
-    margin-top: 1rem;
-    font-size: 1rem;
-    font-weight: 900;
-    flex: 1;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 900;
+  flex: 1;
 }
 .cart__item-price {
-    margin: 0;
+  margin: 0;
 }
 
 .colours {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .colours > * {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 3rem;
-    padding: 1rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 1rem;
 }
 .colour-1 {
-    background-color: #333333;
-    color: #fff;
+  background-color: #333333;
+  color: #fff;
 }
 .colour-2 {
-    background-color: #fa5f1a;
+  background-color: #ff9933;
 }
 .colour-3 {
-    background-color: #ffcc99;
+  background-color: #ffcc99;
 }
 .colour-4 {
-    background-color: #f7f0f0;
-    
+  background-color: #f7f0f0;
 }
 .colour-5 {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 /*.colour-6 {
     background-color: black;
@@ -428,21 +447,21 @@ p > code {
 }
 */
 .checkout-form {
-    margin-top: 5rem;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
 }
 .checkout-form > * {
-    flex: 1;
+  flex: 1;
 }
 .checkout-form > *:first-child {
-    margin-right: 2rem;
+  margin-right: 2rem;
 }
 .bottom-margin {
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 
 .long-link {
-    overflow: hidden;
+  overflow: hidden;
 }
