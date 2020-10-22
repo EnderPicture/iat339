@@ -3,12 +3,6 @@
 
 /* used https://css-tricks.com/snippets/css/a-guide-to-flexbox/ from time to time if I forgets an attribute */
 /* https://www.w3schools.com/cssref/func_calc.asp */
-* {
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-  color: #0d1321;
-  scroll-behavior: smooth;
-}
 
 :root {
   --txt-color: #333333;
@@ -16,6 +10,13 @@
   --light-main-theme-color: #ffcc99;
   --highlight-light-gray: #f2f2f2;
   --highlight-dark-gray: #858889;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: var(--txt-color);
+  scroll-behavior: smooth;
 }
 
 body {
