@@ -6,6 +6,10 @@ main {
     margin-right: auto;
 }
 
+main h1 {
+    font-family: 'Roboto Mono', monospace;
+}
+
 .contact-us-grid {
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -47,36 +51,7 @@ main {
     background-color: #ffffff;
 }
 
-button {
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.5rem 2rem;
 
-    background-color: #0d1321;
-    color: #ffffff;
-    transition: 0.4s ease;
-    font-weight: 900;
-    box-shadow: 0 0 0 0px #0d1321;
-    width: 10rem;
-}
-button:hover,
-button:focus {
-    box-shadow: 0 0 0 3px #0d1321;
-    transition: 0.1s ease;
-}
-
-button:focus {
-    opacity: 0.8;
-    outline: none;
-}
-
-.btn-submit {
-    background-color: #708122;
-    box-shadow: 0 0 0 0px #708122;
-}
-.btn-submit:hover {
-    box-shadow: 0 0 0 3px #708122;
-}
 
 input {
     border: 2px solid #0d132120;
@@ -118,8 +93,7 @@ textarea:focus {
     transition: 0.1s ease;
     outline: none;
 }
-
-#submit {
+.btn-submit {
     max-width: 25%;
     background-color: #FF9933;
 }
