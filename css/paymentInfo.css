@@ -3,7 +3,6 @@ form#payment {
     border: 1px solid #c6c7cc;
     border-radius: 5px;
     overflow: hidden;
-    width:25%;
 }
 
 fieldset {
@@ -80,4 +79,47 @@ input {
 
 .paymentChoice input:checked, .shippingChoice input:checked {
     border: 6px solid rgb(220, 113, 39);
+}
+
+.checkout-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 5rem;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.cart {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#payment {
+    max-width: fit-content;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.checkout-form > *:first-child {
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 40em) {
+    .checkout-form {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4fr;
+    }
+    .cart {
+        
+        min-width: 100%;
+        grid-row: 1;
+        grid-column: 1;
+    }
+    form#payment {
+        margin-left: unset;
+        min-width: 100%;
+        grid-row: 2;
+        grid-column: 1;
+    }
 }

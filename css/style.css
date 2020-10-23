@@ -446,7 +446,7 @@ p > code {
     background-color: black;
 }
 */
-.checkout-form {
+/*.checkout-form {
   margin-top: 5rem;
   display: flex;
   justify-content: center;
@@ -457,7 +457,7 @@ p > code {
 }
 .checkout-form > *:first-child {
   margin-right: 2rem;
-}
+}*/
 .bottom-margin {
   margin-bottom: 5rem;
 }
