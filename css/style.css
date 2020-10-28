@@ -446,18 +446,7 @@ p > code {
     background-color: black;
 }
 */
-/*.checkout-form {
-  margin-top: 5rem;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5rem;
-}
-.checkout-form > * {
-  flex: 1;
-}
-.checkout-form > *:first-child {
-  margin-right: 2rem;
-}*/
+
 .bottom-margin {
   margin-bottom: 5rem;
 }
