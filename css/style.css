@@ -114,7 +114,7 @@ a:focus {
   }
 }
 .cover {
-  height: 100vh;
+  height: 40vh;
   overflow: hidden;
   position: relative;
 }
@@ -342,6 +342,10 @@ p > code {
   margin-top: 1rem;
 }
 .product-item__price {
+  margin: .5rem 1rem;
+  font-weight: 500;
+}
+.product-item__date {
   margin: 0 1rem;
   font-weight: 500;
   margin-bottom: 1rem;
