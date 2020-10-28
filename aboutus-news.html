@@ -1,233 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/navigation.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Style Guide</title>
-</head>
+  </head>
 
-<!-- used this https://www.phpjunkyard.com/tools/text-to-html.php to convert code into html text -->
+  <!-- used this https://www.phpjunkyard.com/tools/text-to-html.php to convert code into html text -->
 
-<body>
+  <body>
     <nav class="nav">
-
-        <div class="mid">
-            <a href="index.html">Listing</a>
-            <a href="styleGuide.html">Style Guide</a>
-            <a href="checkout.html">Checkout</a>
-            <a href="contact-us.html">Contact</a>
-            <a href="aboutus-news.html">About</a>
-            <div class="spacer"></div>
-            <img class="nav__logo" src="img/escudo-power-logo.svg" alt="Escudo Power Logo">
-        </div>
+      <div class="mid">
+        <a href="index.html">Products</a>
+        <a href="aboutus-news.html">About Us</a>
+        <a href="contact-us.html"> Contact Us</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="styleGuide.html">Style Guide</a>
+        <div class="spacer"></div>
+        <img
+          class="nav__logo"
+          src="img/escudo-power-logo.svg"
+          alt="Escudo Power Logo"
+        />
+      </div>
     </nav>
 
     <header class="cover">
-        <img src="https://images.unsplash.com/photo-1518709911915-712d5fd04677?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2134&q=80"
-            alt="">
-        <article class="cover__overlay">
-            <p class="mid">escudo power</p>
-            <h1 class="mid">About Us</h1>
-        </article>
+      <img
+        src="https://images.unsplash.com/photo-1518709911915-712d5fd04677?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2134&q=80"
+        alt=""
+      />
+      <article class="cover__overlay">
+        <p class="mid">escudo power</p>
+        <h1 class="mid">About Us</h1>
+      </article>
     </header>
 
-
-
     <section class="mid" id="style">
-        <h2>Who are we</h2>
-        <p>Placeholder before the development of power semiconductors and allied technologies, one way to convert the
-            voltage of a
-            DC supply to a higher voltage, for low-power applications, was to convert it to AC by using a vibrator,
-            followed by a step-up transformer and rectifier.[1][2] For higher power an electric motor was used to drive
-            a generator of the desired voltage (sometimes combined into a single "dynamotor" unit, a motor and generator
-            combined into one unit, with one winding driving the motor and the other generating the output voltage).
-            These were relatively inefficient and expensive procedures used only when there was no alternative, as to
-            power a car radio (which then used thermionic valves/tubes requiring much higher voltages than available
-            from a 6 or 12 V car battery).[1] The introduction of power semiconductors and integrated circuits made it
-            economically viable to use techniques as described below. For example, to convert the DC power supply to
-            high-frequency AC, use a transformer — small, light, and cheap due to the high frequency — to change the
-            voltage, and rectify back to DC.[3] Although by 1976 transistor car radio receivers did not require high
-            voltages, some amateur radio operators continued to use vibrator supplies and dynamotors for mobile
-            transceivers requiring high voltages although transistorized power supplies were available.[4]</p>
-        <p>While it was possible to derive a lower voltage from a higher with a linear regulator or even a resistor,
-            these methods dissipated the excess as heat; energy-efficient conversion only became possible with
-            solid-state switch-mode circuits. wikipedia on dc-dc converters</p>
+      <h2>Who are we</h2>
+      <p>
+        Placeholder before the development of power semiconductors and allied
+        technologies, one way to convert the voltage of a DC supply to a higher
+        voltage, for low-power applications, was to convert it to AC by using a
+        vibrator, followed by a step-up transformer and rectifier.[1][2] For
+        higher power an electric motor was used to drive a generator of the
+        desired voltage (sometimes combined into a single "dynamotor" unit, a
+        motor and generator combined into one unit, with one winding driving the
+        motor and the other generating the output voltage). These were
+        relatively inefficient and expensive procedures used only when there was
+        no alternative, as to power a car radio (which then used thermionic
+        valves/tubes requiring much higher voltages than available from a 6 or
+        12 V car battery).[1] The introduction of power semiconductors and
+        integrated circuits made it economically viable to use techniques as
+        described below. For example, to convert the DC power supply to
+        high-frequency AC, use a transformer — small, light, and cheap due to
+        the high frequency — to change the voltage, and rectify back to DC.[3]
+        Although by 1976 transistor car radio receivers did not require high
+        voltages, some amateur radio operators continued to use vibrator
+        supplies and dynamotors for mobile transceivers requiring high voltages
+        although transistorized power supplies were available.[4]
+      </p>
+      <p>
+        While it was possible to derive a lower voltage from a higher with a
+        linear regulator or even a resistor, these methods dissipated the excess
+        as heat; energy-efficient conversion only became possible with
+        solid-state switch-mode circuits. wikipedia on dc-dc converters
+      </p>
     </section>
 
-
     <section class="mid" id="style">
-        <h2>News</h2>
-        <div class="product-grid">
-            <article class="product-item">
-                <a href="#">
-                    <img class="product-item__img"
-                        src="https://images.unsplash.com/photo-1550238309-986f951fb0c7?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=1050&q=80"
-                        alt="item" />
-                    <h5 class="product-item__name">New Story 1</h5>
-                    <p class="product-item__price">$20.00</p>
-                    <p class="product-item__date">Oct 20, 2020</p>
-                    <p class="product-item__desc">
-                        nam dolore possimus tempora facilis sed quia aliquam
-                        aut. sint labore deserunt aut sunt enim. sunt sunt a
-                        adipisci accusamus qui. consequatur voluptatem
-                        explicabo consequatur dolores repellat omnis
-                        voluptatem aperiam. dolore ratione dolor libero enim
-                        aut et dicta. et debitis quis ut odit atque sint
-                        mollitia temporibus.
-                    </p>
-                </a>
-            </article>
-            <article class="product-item">
-                <a href="#">
-                    <img class="product-item__img"
-                        src="https://images.unsplash.com/photo-1550238309-986f951fb0c7?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=1050&q=80"
-                        alt="item" />
-                    <h5 class="product-item__name">New Story 2</h5>
-                    <p class="product-item__price">$20.00</p>
-                    <p class="product-item__date">Oct 20, 2020</p>
-                    <p class="product-item__desc">
-                        nam dolore possimus tempora facilis sed quia aliquam
-                        aut. sint labore deserunt aut sunt enim. sunt sunt a
-                        adipisci accusamus qui. consequatur voluptatem
-                        explicabo consequatur dolores repellat omnis
-                        voluptatem aperiam. dolore ratione dolor libero enim
-                        aut et dicta. et debitis quis ut odit atque sint
-                        mollitia temporibus.
-                    </p>
-                </a>
-            </article>
-            <article class="product-item">
-                <a href="#">
-                    <img class="product-item__img"
-                        src="https://images.unsplash.com/photo-1550238309-986f951fb0c7?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=1050&q=80"
-                        alt="item" />
-                    <h5 class="product-item__name">New Story 3</h5>
-                    <p class="product-item__price">$20.00</p>
-                    <p class="product-item__date">Oct 20, 2020</p>
-                    <p class="product-item__desc">
-                        nam dolore possimus tempora facilis sed quia aliquam
-                        aut. sint labore deserunt aut sunt enim. sunt sunt a
-                        adipisci accusamus qui. consequatur voluptatem
-                        explicabo consequatur dolores repellat omnis
-                        voluptatem aperiam. dolore ratione dolor libero enim
-                        aut et dicta. et debitis quis ut odit atque sint
-                        mollitia temporibus.
-                    </p>
-                </a>
-            </article>
-            <article class="product-item">
-                <a href="#">
-                    <img class="product-item__img"
-                        src="https://images.unsplash.com/photo-1550238309-986f951fb0c7?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=1050&q=80"
-                        alt="item" />
-                    <h5 class="product-item__name">New Story 4</h5>
-                    <p class="product-item__price">$20.00</p>
-                    <p class="product-item__date">Oct 20, 2020</p>
-                    <p class="product-item__desc">
-                        nam dolore possimus tempora facilis sed quia aliquam
-                        aut. sint labore deserunt aut sunt enim. sunt sunt a
-                        adipisci accusamus qui. consequatur voluptatem
-                        explicabo consequatur dolores repellat omnis
-                        voluptatem aperiam. dolore ratione dolor libero enim
-                        aut et dicta. et debitis quis ut odit atque sint
-                        mollitia temporibus.
-                    </p>
-                </a>
-            </article>
-            <article class="product-item">
-                <a href="#">
-                    <img class="product-item__img"
-                        src="https://images.unsplash.com/photo-1550238309-986f951fb0c7?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=1050&q=80"
-                        alt="item" />
-                    <h5 class="product-item__name">New Story 5</h5>
-                    <p class="product-item__price">$20.00</p>
-                    <p class="product-item__date">Oct 20, 2020</p>
-                    <p class="product-item__desc">
-                        nam dolore possimus tempora facilis sed quia aliquam
-                        aut. sint labore deserunt aut sunt enim. sunt sunt a
-                        adipisci accusamus qui. consequatur voluptatem
-                        explicabo consequatur dolores repellat omnis
-                        voluptatem aperiam. dolore ratione dolor libero enim
-                        aut et dicta. et debitis quis ut odit atque sint
-                        mollitia temporibus.
-                    </p>
-                </a>
-            </article>
-            <article class="product-item">
-                <a href="#">
-                    <img class="product-item__img"
-                        src="https://images.unsplash.com/photo-1550238309-986f951fb0c7?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=1050&q=80"
-                        alt="item" />
-                    <h5 class="product-item__name">New Story 6</h5>
-                    <p class="product-item__price">$20.00</p>
-                    <p class="product-item__date">Oct 20, 2020</p>
-                    <p class="product-item__desc">
-                        nam dolore possimus tempora facilis sed quia aliquam
-                        aut. sint labore deserunt aut sunt enim. sunt sunt a
-                        adipisci accusamus qui. consequatur voluptatem
-                        explicabo consequatur dolores repellat omnis
-                        voluptatem aperiam. dolore ratione dolor libero enim
-                        aut et dicta. et debitis quis ut odit atque sint
-                        mollitia temporibus.
-                    </p>
-                </a>
-            </article>
-            <article class="product-item">
-                <a href="#">
-                    <img class="product-item__img"
-                        src="https://images.unsplash.com/photo-1550238309-986f951fb0c7?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=1050&q=80"
-                        alt="item" />
-                    <h5 class="product-item__name">New Story 7</h5>
-                    <p class="product-item__price">$20.00</p>
-                    <p class="product-item__date">Oct 20, 2020</p>
-                    <p class="product-item__desc">
-                        nam dolore possimus tempora facilis sed quia aliquam
-                        aut. sint labore deserunt aut sunt enim. sunt sunt a
-                        adipisci accusamus qui. consequatur voluptatem
-                        explicabo consequatur dolores repellat omnis
-                        voluptatem aperiam. dolore ratione dolor libero enim
-                        aut et dicta. et debitis quis ut odit atque sint
-                        mollitia temporibus.
-                    </p>
-                </a>
-            </article>
-            <article class="product-item">
-                <a href="#">
-                    <img class="product-item__img"
-                        src="https://images.unsplash.com/photo-1550238309-986f951fb0c7?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=1050&q=80"
-                        alt="item" />
-                    <h5 class="product-item__name">New Story 8</h5>
-                    <p class="product-item__price">$20.00</p>
-                    <p class="product-item__date">Oct 20, 2020</p>
-                    <p class="product-item__desc">
-                        nam dolore possimus tempora facilis sed quia aliquam
-                        aut. sint labore deserunt aut sunt enim. sunt sunt a
-                        adipisci accusamus qui. consequatur voluptatem
-                        explicabo consequatur dolores repellat omnis
-                        voluptatem aperiam. dolore ratione dolor libero enim
-                        aut et dicta. et debitis quis ut odit atque sint
-                        mollitia temporibus.
-                    </p>
-                </a>
-            </article>
-        </div>
+      <h2>News</h2>
+      <div class="product-grid">
+        <article class="product-item">
+          <a href="#">
+            <img
+              class="product-item__img"
+              src="https://images.unsplash.com/photo-1550238309-986f951fb0c7?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=1050&q=80"
+              alt="item"
+            />
+            <h5 class="product-item__name">New Story 1</h5>
+            <p class="product-item__price">$20.00</p>
+            <p class="product-item__date">Oct 20, 2020</p>
+            <p class="product-item__desc">
+              nam dolore possimus tempora facilis sed quia aliquam aut. sint
+              labore deserunt aut sunt enim. sunt sunt a adipisci accusamus qui.
+              consequatur voluptatem explicabo consequatur dolores repellat
+              omnis voluptatem aperiam. dolore ratione dolor libero enim aut et
+              dicta. et debitis quis ut odit atque sint mollitia temporibus.
+            </p>
+          </a>
+        </article>
+        <article class="product-item">
+          <a href="#">
+            <img
+              class="product-item__img"
+              src="https://images.unsplash.com/photo-1550238309-986f951fb0c7?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=1050&q=80"
+              alt="item"
+            />
+            <h5 class="product-item__name">New Story 2</h5>
+            <p class="product-item__price">$20.00</p>
+            <p class="product-item__date">Oct 20, 2020</p>
+            <p class="product-item__desc">
+              nam dolore possimus tempora facilis sed quia aliquam aut. sint
+              labore deserunt aut sunt enim. sunt sunt a adipisci accusamus qui.
+              consequatur voluptatem explicabo consequatur dolores repellat
+              omnis voluptatem aperiam. dolore ratione dolor libero enim aut et
+              dicta. et debitis quis ut odit atque sint mollitia temporibus.
+            </p>
+          </a>
+        </article>
+        <article class="product-item">
+          <a href="#">
+            <img
+              class="product-item__img"
+              src="https://images.unsplash.com/photo-1550238309-986f951fb0c7?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=1050&q=80"
+              alt="item"
+            />
+            <h5 class="product-item__name">New Story 3</h5>
+            <p class="product-item__price">$20.00</p>
+            <p class="product-item__date">Oct 20, 2020</p>
+            <p class="product-item__desc">
+              nam dolore possimus tempora facilis sed quia aliquam aut. sint
+              labore deserunt aut sunt enim. sunt sunt a adipisci accusamus qui.
+              consequatur voluptatem explicabo consequatur dolores repellat
+              omnis voluptatem aperiam. dolore ratione dolor libero enim aut et
+              dicta. et debitis quis ut odit atque sint mollitia temporibus.
+            </p>
+          </a>
+        </article>
+        <article class="product-item">
+          <a href="#">
+            <img
+              class="product-item__img"
+              src="https://images.unsplash.com/photo-1550238309-986f951fb0c7?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=1050&q=80"
+              alt="item"
+            />
+            <h5 class="product-item__name">New Story 4</h5>
+            <p class="product-item__price">$20.00</p>
+            <p class="product-item__date">Oct 20, 2020</p>
+            <p class="product-item__desc">
+              nam dolore possimus tempora facilis sed quia aliquam aut. sint
+              labore deserunt aut sunt enim. sunt sunt a adipisci accusamus qui.
+              consequatur voluptatem explicabo consequatur dolores repellat
+              omnis voluptatem aperiam. dolore ratione dolor libero enim aut et
+              dicta. et debitis quis ut odit atque sint mollitia temporibus.
+            </p>
+          </a>
+        </article>
+        <article class="product-item">
+          <a href="#">
+            <img
+              class="product-item__img"
+              src="https://images.unsplash.com/photo-1550238309-986f951fb0c7?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=1050&q=80"
+              alt="item"
+            />
+            <h5 class="product-item__name">New Story 5</h5>
+            <p class="product-item__price">$20.00</p>
+            <p class="product-item__date">Oct 20, 2020</p>
+            <p class="product-item__desc">
+              nam dolore possimus tempora facilis sed quia aliquam aut. sint
+              labore deserunt aut sunt enim. sunt sunt a adipisci accusamus qui.
+              consequatur voluptatem explicabo consequatur dolores repellat
+              omnis voluptatem aperiam. dolore ratione dolor libero enim aut et
+              dicta. et debitis quis ut odit atque sint mollitia temporibus.
+            </p>
+          </a>
+        </article>
+        <article class="product-item">
+          <a href="#">
+            <img
+              class="product-item__img"
+              src="https://images.unsplash.com/photo-1550238309-986f951fb0c7?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=1050&q=80"
+              alt="item"
+            />
+            <h5 class="product-item__name">New Story 6</h5>
+            <p class="product-item__price">$20.00</p>
+            <p class="product-item__date">Oct 20, 2020</p>
+            <p class="product-item__desc">
+              nam dolore possimus tempora facilis sed quia aliquam aut. sint
+              labore deserunt aut sunt enim. sunt sunt a adipisci accusamus qui.
+              consequatur voluptatem explicabo consequatur dolores repellat
+              omnis voluptatem aperiam. dolore ratione dolor libero enim aut et
+              dicta. et debitis quis ut odit atque sint mollitia temporibus.
+            </p>
+          </a>
+        </article>
+        <article class="product-item">
+          <a href="#">
+            <img
+              class="product-item__img"
+              src="https://images.unsplash.com/photo-1550238309-986f951fb0c7?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=1050&q=80"
+              alt="item"
+            />
+            <h5 class="product-item__name">New Story 7</h5>
+            <p class="product-item__price">$20.00</p>
+            <p class="product-item__date">Oct 20, 2020</p>
+            <p class="product-item__desc">
+              nam dolore possimus tempora facilis sed quia aliquam aut. sint
+              labore deserunt aut sunt enim. sunt sunt a adipisci accusamus qui.
+              consequatur voluptatem explicabo consequatur dolores repellat
+              omnis voluptatem aperiam. dolore ratione dolor libero enim aut et
+              dicta. et debitis quis ut odit atque sint mollitia temporibus.
+            </p>
+          </a>
+        </article>
+        <article class="product-item">
+          <a href="#">
+            <img
+              class="product-item__img"
+              src="https://images.unsplash.com/photo-1550238309-986f951fb0c7?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=1050&q=80"
+              alt="item"
+            />
+            <h5 class="product-item__name">New Story 8</h5>
+            <p class="product-item__price">$20.00</p>
+            <p class="product-item__date">Oct 20, 2020</p>
+            <p class="product-item__desc">
+              nam dolore possimus tempora facilis sed quia aliquam aut. sint
+              labore deserunt aut sunt enim. sunt sunt a adipisci accusamus qui.
+              consequatur voluptatem explicabo consequatur dolores repellat
+              omnis voluptatem aperiam. dolore ratione dolor libero enim aut et
+              dicta. et debitis quis ut odit atque sint mollitia temporibus.
+            </p>
+          </a>
+        </article>
+      </div>
     </section>
-    <footer class = "escudoFooter">
-        <svg class = "footerLogo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        viewBox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
-          <style type="text/css">
-            .st0{fill:url(#SVGID_1_);}
-          </style>
-          <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="38.8947" y1="396" x2="573.1053" y2="396">
-            <stop  offset="0" style="stop-color:#E52F27"/>
-            <stop  offset="0.5" style="stop-color:#F06724"/>
-            <stop  offset="1" style="stop-color:#F99F20"/>
-          </linearGradient>
-          <path xmlns="http://www.w3.org/2000/svg" class="st0" d="M535.72,392.57c-3.98,21.43-7.29,40.36-11.02,
+    <footer class="escudoFooter">
+      <svg
+        class="footerLogo"
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 612 792"
+        style="enable-background: new 0 0 612 792"
+        xml:space="preserve"
+      >
+        <style type="text/css">
+          .st0 {
+            fill: url(#SVGID_1_);
+          }
+        </style>
+        <linearGradient
+          id="SVGID_1_"
+          gradientUnits="userSpaceOnUse"
+          x1="38.8947"
+          y1="396"
+          x2="573.1053"
+          y2="396"
+        >
+          <stop offset="0" style="stop-color: #e52f27" />
+          <stop offset="0.5" style="stop-color: #f06724" />
+          <stop offset="1" style="stop-color: #f99f20" />
+        </linearGradient>
+        <path
+          xmlns="http://www.w3.org/2000/svg"
+          class="st0"
+          d="M535.72,392.57c-3.98,21.43-7.29,40.36-11.02,
           59.2c-11.01,55.62-22.88,111-39.83,165.25  c-5.58,17.86-15.8,30.41-30.21,41.37c-34.87,26.51-69.13,53.82-103.81,80.58c-8.78,
           6.78-18.13,12.84-27.43,18.92  c-1.89,1.23-4.91,1.93-7.05,1.4c-20.54-5-41.48-8.97-58.52-23.05c-4.02-3.32-5.67-5.72-3.76-11.39
           c24.32-72.33,59.13-139.01,107.47-198.24c32.49-39.82,69.41-75.16,112.89-103c17.6-11.27,36.18-21.06,54.45-31.26  
@@ -253,13 +287,20 @@
           c65.02-35.73,135.01-55.7,209.19-59.6c46.07-2.43,92.05,0.42,136.5,13.43c32.68,9.57,64.48,22.14,96.74,33.16  
           c2.41,0.82,5.42-0.09,8.15-0.2c-1.06-3.23-1.52-6.88-3.39-9.54c-1.39-1.98-4.54-2.83-7.02-3.94C515.47,100.34,468.14,79.4,421,58.07  
           c-43.45-19.66-88.64-28.54-136.43-24.64c-26.7,2.18-52.06,9.17-76.51,19.31C153.9,75.19,100.08,98.44,46.02,121.15  
-          c-6.09,2.56-7.54,6.58-7.03,12.38C41.25,153.06,43.48,172.6,45.81,192.12z"/></svg>
-        <h2 class = "footerTitle">Products and Services</h2>
-        <a href = "aboutus-news.html" class = "footerAboutTitle">About Us</a>
-        <p class = "footerAboutInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href = "contact-us.html" class = "footerContactTitle">Contact Us</a>
-        <p class = "footerContactInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </footer>
-</body>
-
+          c-6.09,2.56-7.54,6.58-7.03,12.38C41.25,153.06,43.48,172.6,45.81,192.12z"
+        />
+      </svg>
+      <h2 class="footerTitle">Products and Services</h2>
+      <a href="aboutus-news.html" class="footerAboutTitle">About Us</a>
+      <p class="footerAboutInfo">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <a href="contact-us.html" class="footerContactTitle">Contact Us</a>
+      <p class="footerContactInfo">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </footer>
+  </body>
 </html>
