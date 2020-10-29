@@ -134,7 +134,7 @@ a:focus {
 }
 .cover__overlay > h1 {
   margin-bottom: 2rem;
-  margin-top: -1rem;
+  margin-top: 0;
 }
 .cover__overlay > p {
   font-weight: 900;
