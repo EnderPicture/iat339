@@ -1,73 +1,139 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset = "utf-8">
-        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
-        <title>Contact Us Page</title>
-        <meta name = "description" content = "Contact Us">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Contact Us Page</title>
+    <meta name="description" content="Contact Us" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel = "stylesheet" href = "css/normalize.css">
-        <link rel = "stylesheet" href = "css/navigation.css">
-        <link rel = "stylesheet" href = "css/style.css">
-        <link rel = "stylesheet" href = "css/contactUs.css">
-    </head>
-    <body>
-    <div>
-        <nav class = "nav">
-            <div class = "mid">
-                <a href="index.html">Listing</a>
-          <a href="styleGuide.html">Style Guide</a>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/contactUs.css" />
+  </head>
+  <body>
+    <!-- <div>
+      <nav class="nav">
+        <div class="mid">
+          <a href="index.html">Products</a>
+          <a href="aboutus-news.html">About Us</a>
+          <a href="contact-us.html"> Contact Us</a>
           <a href="checkout.html">Checkout</a>
-          <a href = "contact-us.html"> Contact Us</a>
-		  <a href = "aboutus-news.html">About Us</a>
-                <div class = "spacer"></div>
-                <img
-                class="nav__logo"
-                src="img/escudo-power-logo.svg"
-                alt="Escudo Power Logo"
-                />
-            </div>
-        </nav>
-    </div>
-    <main>
-        <h1 class = "title">Contact Us</h1>
-        <div class = "contact-us-grid">
-            <div class = "contactInfo">
-                <h2>Phone Number</h2>
-                <p>604-315-7323</p>
-                <h2>Address</h2>
-                <p>208 - 2323 Boundary Road,<br> Vancouver BC V5M 4V8</p>
-                <h2>Office Hours</h2>
-                <p>Monday - Friday 8am - 5pm<br> Closed Saturday and Sunday</p>
-            </div>
-            <form class = "custInfo">
-                <label for = "custName">Name</label><br>
-                <input type = "text" name = "custName" id = "custName"><br>
-                <label for = "custPhone">Phone Number</label><br>
-                <input type = "tel" name = "custPhone" id = "custPhone"><br>
-                <label for = "custEmail">Email</label><br>
-                <input type = "email" name = "custEmail" id = "custEmail"><br>
-                <label for = "custMessage">Message</label><br>
-                <textarea name = "custMessage" id = "custMessage" rows = "10" cols = "33"></textarea>
-                <input type = "submit" value = "Submit" name = "submit" class = "btn-submit">
-            </form>
+          <a href="styleGuide.html">Style Guide</a>
+          <div class="spacer"></div>
+          s
         </div>
+      </nav>
+    </div> -->
+
+    <!-- NEW NAV -->
+
+    <nav class="nav">
+      <!-- <a href="index.html"
+        ><img
+          class="nav_logo"
+          src="img/escudo-power-logo.svg"
+          alt="Escudo Power Logo"
+      /></a> -->
+      <ul class="menu">
+        <li class="nav_logo">
+          <a href="index.html">
+            <!-- <img src="img/escudo-power-logo.svg" alt="Escudo Power Logo"
+          /> -->
+            Logo
+          </a>
+        </li>
+        <li class="nav_item"><a href="index.html">Products</a></li>
+        <li class="nav_item"><a href="aboutus-news.html">About Us</a></li>
+
+        <li class="nav_item"><a href="checkout.html">Checkout</a></li>
+        <li class="nav_item_button">
+          <a href="contact-us.html"> Contact Us</a>
+        </li>
+        <li class="toggle">
+          <span class="bars"></span>
+        </li>
+        <!-- <li><a href="styleGuide.html">Style Guide</a></li> -->
+      </ul>
+    </nav>
+    <main>
+      <h1 class="title">Contact Us</h1>
+      <div class="contact-us-grid">
+        <div class="contactInfo">
+          <h2>Phone Number</h2>
+          <p>604-315-7323</p>
+          <h2>Address</h2>
+          <p>
+            208 - 2323 Boundary Road,<br />
+            Vancouver BC V5M 4V8
+          </p>
+          <h2>Office Hours</h2>
+          <p>
+            Monday - Friday 8am - 5pm<br />
+            Closed Saturday and Sunday
+          </p>
+        </div>
+        <form class="custInfo">
+          <label for="custName">Name</label><br />
+          <input type="text" name="custName" id="custName" /><br />
+          <label for="custPhone">Phone Number</label><br />
+          <input type="tel" name="custPhone" id="custPhone" /><br />
+          <label for="custEmail">Email</label><br />
+          <input type="email" name="custEmail" id="custEmail" /><br />
+          <label for="custMessage">Message</label><br />
+          <textarea
+            name="custMessage"
+            id="custMessage"
+            rows="10"
+            cols="33"
+          ></textarea>
+          <input
+            type="submit"
+            value="Submit"
+            name="submit"
+            class="btn-submit"
+          />
+        </form>
+      </div>
     </main>
 
-    <footer class = "escudoFooter">
-		<svg class = "footerLogo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		viewBox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
-			<style type="text/css">
-				.st0{fill:url(#SVGID_1_);}
-			</style>
-			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="38.8947" y1="396" x2="573.1053" y2="396">
-				<stop  offset="0" style="stop-color:#E52F27"/>
-				<stop  offset="0.5" style="stop-color:#F06724"/>
-				<stop  offset="1" style="stop-color:#F99F20"/>
-			</linearGradient>
-			<path xmlns="http://www.w3.org/2000/svg" class="st0" d="M535.72,392.57c-3.98,21.43-7.29,40.36-11.02,
+    <footer class="escudoFooter">
+      <svg
+        class="footerLogo"
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 612 792"
+        style="enable-background: new 0 0 612 792"
+        xml:space="preserve"
+      >
+        <style type="text/css">
+          .st0 {
+            fill: url(#SVGID_1_);
+          }
+        </style>
+        <linearGradient
+          id="SVGID_1_"
+          gradientUnits="userSpaceOnUse"
+          x1="38.8947"
+          y1="396"
+          x2="573.1053"
+          y2="396"
+        >
+          <stop offset="0" style="stop-color: #e52f27" />
+          <stop offset="0.5" style="stop-color: #f06724" />
+          <stop offset="1" style="stop-color: #f99f20" />
+        </linearGradient>
+        <path
+          xmlns="http://www.w3.org/2000/svg"
+          class="st0"
+          d="M535.72,392.57c-3.98,21.43-7.29,40.36-11.02,
 			59.2c-11.01,55.62-22.88,111-39.83,165.25  c-5.58,17.86-15.8,30.41-30.21,41.37c-34.87,26.51-69.13,53.82-103.81,80.58c-8.78,
 			6.78-18.13,12.84-27.43,18.92  c-1.89,1.23-4.91,1.93-7.05,1.4c-20.54-5-41.48-8.97-58.52-23.05c-4.02-3.32-5.67-5.72-3.76-11.39
 			c24.32-72.33,59.13-139.01,107.47-198.24c32.49-39.82,69.41-75.16,112.89-103c17.6-11.27,36.18-21.06,54.45-31.26  
@@ -93,12 +159,20 @@
 			c65.02-35.73,135.01-55.7,209.19-59.6c46.07-2.43,92.05,0.42,136.5,13.43c32.68,9.57,64.48,22.14,96.74,33.16  
 			c2.41,0.82,5.42-0.09,8.15-0.2c-1.06-3.23-1.52-6.88-3.39-9.54c-1.39-1.98-4.54-2.83-7.02-3.94C515.47,100.34,468.14,79.4,421,58.07  
 			c-43.45-19.66-88.64-28.54-136.43-24.64c-26.7,2.18-52.06,9.17-76.51,19.31C153.9,75.19,100.08,98.44,46.02,121.15  
-			c-6.09,2.56-7.54,6.58-7.03,12.38C41.25,153.06,43.48,172.6,45.81,192.12z"/></svg>
-		<h2 class = "footerTitle">Products and Services</h2>
-		<a href = "aboutus-news.html" class = "footerAboutTitle">About Us</a>
-		<p class = "footerAboutInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-		<a href = "contact-us.html" class = "footerContactTitle">Contact Us</a>
-		<p class = "footerContactInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			c-6.09,2.56-7.54,6.58-7.03,12.38C41.25,153.06,43.48,172.6,45.81,192.12z"
+        />
+      </svg>
+      <h2 class="footerTitle">Products and Services</h2>
+      <a href="aboutus-news.html" class="footerAboutTitle">About Us</a>
+      <p class="footerAboutInfo">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <a href="contact-us.html" class="footerContactTitle">Contact Us</a>
+      <p class="footerContactInfo">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
     </footer>
   </body>
 </html>
