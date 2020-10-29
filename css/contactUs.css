@@ -18,6 +18,8 @@ main h1 {
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 1fr;
+    height: 100%;
+    margin-bottom: 10em;
 }
 
 .contactInfo {
@@ -40,13 +42,11 @@ main h1 {
 }
 
 .contactInfo p {
-    
     font-size: 1.25em;
     font-family: 'Roboto Mono', monospace;
 }
 
 .contactInfo h2 {
-    background-color: #ffffff;
     font-family: 'Roboto Mono', monospace;
     font-size: 1.75em;
 }

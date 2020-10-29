@@ -75,11 +75,11 @@ function openNavBar() {
             nav_items_active[i].setAttribute("display", "block");
         }
         
-        bars.setAttribute("background-color", "var(--txt-color)");
-        bars.setAttribute("display", "inline-block");
-        bars.setAttribute("height", "0.128rem");
-        bars.setAttribute("position", "relative");
-        bars.setAttribute("width", "1rem");
+        bars.style.backgroundColor = "var(--txt-color)";
+        bars.style.display= "inline-block";
+        bars.style.height = "0.128rem";
+        bars.style.position= "relative";
+        bars.style.width=  "1rem";
 
         /*bars_before.setAttribute("background-color", "var(--txt-color)");
         bars_before.setAttribute("content", "''");
