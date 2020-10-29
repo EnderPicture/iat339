@@ -1,7 +1,6 @@
 form#payment {
-    margin-left: 1em;
-    border: 1px solid #c6c7cc;
     border-radius: 5px;
+    border-radius: .5rem;
     overflow: hidden;
 }
 
@@ -17,7 +16,7 @@ input {
 }
 
 .userInfo, .paymentInfo, .paymentChoice, .shippingChoice, .shippingInfo, .action {
-    padding: 2em 2em 0 2em;
+    /* padding: 2em 2em 0 2em; */
     background-color: rgba(240, 240, 240, 0.75);
 }
 
@@ -36,8 +35,8 @@ input {
 
 .userInfo input, .paymentInfo input, .shippingInfo input {
     background: #fff;
-    border: 1px solid #c6c7cc;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+    /* border: 1px solid #c6c7cc; */
+    /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1); */
     color: #636466;
     padding: 0.5em;
     margin-top: 0.5em;
@@ -67,8 +66,8 @@ input {
     width: 16px;
     height: 16px;
 
-    border: 2px solid #999;
-    transition: 0.2s all linear;
+    /* border: 2px solid #999; */
+    /* transition: 0.2s all linear; */
     margin-right: 5px;
     
     cursor: pointer;
@@ -77,9 +76,9 @@ input {
     top: 4px;
 }
 
-.paymentChoice input:checked, .shippingChoice input:checked {
+/* .paymentChoice input:checked, .shippingChoice input:checked {
     border: 6px solid rgb(220, 113, 39);
-}
+} */
 
 .checkout-form {
     display: grid;
@@ -88,6 +87,7 @@ input {
     margin-top: 5rem;
     justify-content: center;
     margin-bottom: 5rem;
+    gap: 2rem;
 }
 
 .cart {
@@ -96,14 +96,13 @@ input {
 }
 
 #payment {
-    max-width: fit-content;
     grid-row: 1;
     grid-column: 2;
 }
 
-.checkout-form > *:first-child {
+/* .checkout-form > *:first-child {
   margin-right: 2rem;
-}
+} */
 
 @media screen and (max-width: 40em) {
     .checkout-form {

@@ -264,7 +264,7 @@ form {
   display: flex;
   flex-direction: column;
   background-color: #0d132110;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 0.5rem;
 }
 form > h4 {
@@ -392,9 +392,9 @@ p > code {
 
 .cart {
   background-color: #0d132110;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 0.5rem;
-  max-width: 20rem;
+  /* max-width: 20rem; */
 }
 .cart > article {
   border-bottom: 2px solid #0d132110;
