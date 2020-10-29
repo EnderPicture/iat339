@@ -151,7 +151,7 @@ ul {
   order: 2;
   width: 100%;
   text-align: center;
-  /* display: none; */
+   display: none; 
 }
 
 .nav_item {
@@ -168,6 +168,8 @@ ul {
 .toggle {
   cursor: pointer;
 }
+
+
 
 .bars {
   background-color: var(--txt-color);
