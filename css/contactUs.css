@@ -103,6 +103,21 @@ textarea:focus {
 }
 
 @media screen and (max-width: 44rem) {
+    main {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contactInfo {
+        margin-left: 1em;
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+    }
+
     .contact-us-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 3fr 2fr;
