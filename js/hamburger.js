@@ -36,8 +36,32 @@ function openNavBar() {
         nav_item_button_a.style.padding = "0.5rem 1rem";
         nav_item_button_a.style.backgroundColor = "var(--main-theme-color)";
         nav_item_button_a.style.border = "0.15rem var(--main-theme-color) solid";
-        nav_item_button_a_hover.style.transition = "0.25s";
-        nav_item_button_a_hover.style.backgroundColor = "transparent";
+        //nav_item_button_a_hover.style.transition = "0.25s";
+        //nav_item_button_a_hover.style.backgroundColor = "transparent";
+
+        if (nav_item_button.style.display == "unset") {
+            nav_item_button.style.display = "none";
+        } else {
+            nav_item_button.style.display = "unset";
+        }
+
+        for (let i = 0; i < nav_items.length; i++) {
+            nav_items[i].style.width = "100%";
+            nav_items[i].style.textAlign = "center";
+            nav_items[i].style.order = "3";
+            
+            nav_items[i].style.backgroundColor = "var(--highlight-light-gray)";
+            
+            if (nav_items[i].style.display == "unset") {
+                nav_items[i].style.display = "none";
+            } else {
+                nav_items[i].style.display ="unset";
+            }
+        }
+        for (let i = 0; i < nav_items_active.length; i++) {
+            nav_items_active[i].setAttribute("display", "block");
+        }
+
     } else {
         menu.style.display = "flex";
         menu.style.flexWrap = "wrap";
