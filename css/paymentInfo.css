@@ -104,7 +104,7 @@ input {
   margin-right: 2rem;
 } */
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 70em) {
     .checkout-form {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 4fr;
