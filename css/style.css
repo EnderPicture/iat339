@@ -346,9 +346,8 @@ p > code {
   font-weight: 500;
 }
 .product-item__date {
-  margin: 0 1rem;
+  margin: .5rem 1rem;
   font-weight: 500;
-  margin-bottom: 1rem;
 }
 .product-item__desc {
   font-weight: 100;
