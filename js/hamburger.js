@@ -11,7 +11,38 @@ var bars = document.querySelector(".bars");
 var bars_before = document.querySelector(".bars::before");
 var bars_after = document.querySelector(".bars::after");
 
+var droppedDown = false;
 
+window.onresize = fixError;
+
+function fixError() {
+    console.log("this");
+    if (screen.width > convertRemToPixels(50)) {
+        for (let i = 0; i < nav_items.length; i++) {
+            if (nav_items[i].style.display == "none") {
+                for (let i = 0; i < nav_items.length; i++) {
+                    nav_items[i].style.display = "block";
+                    nav_items[i].style.width = "auto";
+                    nav_items[i].style.order = "3";
+                }
+            }
+        }
+    } else {
+        if (droppedDown) {
+        for (let i = 0; i < nav_items.length; i++) {
+            //nav_items[i].style.width = "100%";
+            nav_items[i].style.textAlign = "center";
+            nav_items[i].style.order = "3";
+            
+            nav_items[i].style.backgroundColor = "var(--highlight-light-gray)";
+        }
+        } else {
+            for (let i = 0; i < nav_items.length; i++) {
+            nav_items[i].style.display = "none";
+            }
+        }
+    }
+}
 
 function openNavBar() {
     
