@@ -1,27 +1,27 @@
-.nav {
+/* .nav {
   background-color: #0d132199;
   position: fixed;
   width: 100%;
   top: 0;
 
   height: 3rem;
-  z-index: 100;
+  z-index: 100; */
 
-  /* only for looks */
-  /* This is not an error. If it does not work it will not effect anything */
-  /* https://caniuse.com/?search=backdrop-filter */
-  backdrop-filter: blur(20px);
-  /* --------------------------------- */
+/* only for looks */
+/* This is not an error. If it does not work it will not effect anything */
+/* https://caniuse.com/?search=backdrop-filter */
+/* backdrop-filter: blur(20px); */
+/* --------------------------------- */
 
-  box-shadow: 0 01px 01px 0 #0001, 0 02px 02px 0 #0001, 0 04px 04px 0 #0001,
+/* box-shadow: 0 01px 01px 0 #0001, 0 02px 02px 0 #0001, 0 04px 04px 0 #0001,
     0 08px 08px 0 #0001, 0 16px 16px 0 #0001, 0 32px 32px 0 #0001;
 }
 @media screen and (max-width: 70rem) {
-	.nav {
-		display: none;
-	}
+  .nav {
+    display: none;
+  }
 }
-.nav__logo {
+.nav_logo {
   height: 100%;
   padding: 0.5rem;
   background-color: #0008;
@@ -60,119 +60,189 @@
 }
 article > .nav {
   position: initial;
+} */
+
+/* NEW NAV CSS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --txt-color: #333333;
+  --main-theme-color: #ff9933;
+  --light-main-theme-color: #ffcc99;
+  --highlight-light-gray: #f2f2f2;
+  --highlight-dark-gray: #858889;
 }
 
-/*Footer CSS*/
-.st0{fill:url(#SVGID_1_);}
-.escudoFooter {
-	background-color: #333333;
-	display: grid;
-	grid-template-columns: repeat(15, 1fr);
-	grid-template-rows: repeat(4, 1fr);
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
 }
 
-.footerLogo {
-	max-width: 100%;
-	grid-row: 1/5;
-	grid-column: 2/3;
-	margin-top: auto;
-	margin-bottom: auto;
-}
-.footerTitle::after {
-	background-color: #333333;
-	color: unset;
-}
-
-.footerTitle {
-	font-size: 2.5em;
-	color: #ffcc99;
-	grid-row: 1/5;
-	grid-column: 5/9;
-	margin-top: auto;
-	margin-bottom: auto;
+.nav {
+  font-family: "Roboto Mono", monospace;
+  background-color: var(--highlight-light-gray);
+  position: fixed;
+  width: 100%;
+  /* min-width: 570px; */
+  top: 0;
+  /* height: 6rem; */
+  z-index: 100;
 }
 
-.footerAboutTitle {
-	font-size: 2em;
-	color: #ffcc99;
-	grid-row: 2;
-	grid-column: 10/12;
+.nav_logo {
+  height: 100%;
+  max-width: 100%;
+  padding: 0.5rem;
+  background-color: #0008;
+  object-fit: contain;
 }
 
-.footerAboutInfo {
-	color: white;
-	grid-row: 3/5;
-	grid-column: 10/12;
+.nav a {
+  border-bottom: 0.15rem transparent solid;
 }
 
-.footerContactTitle {
-	font-size: 2em;
-	color: #ffcc99;
-	grid-row: 2;
-	grid-column: 13/15;
+.nav a:hover {
+  border-bottom: 0.15rem var(--main-theme-color) solid;
 }
 
-.footerContactInfo {
-	color: white;
-	grid-row: 3/5;
-	grid-column: 13/15;
+.nav_item_button a:hover {
+  text-decoration: none;
 }
 
-@media screen and (max-width: 50rem) {
-	.escudoFooter {
-		background-color: #333333;
-		display: grid;
-		grid-template-rows: repeat(15, 1fr);
-		grid-template-columns: 1fr;
-	}
-	
-	.footerLogo {
-		max-width: 25%;
-		grid-column: 1;
-		grid-row: 2/8;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.footerTitle::after {
-		background-color: #333333;
-		color: unset;
-	}
-	
-	.footerTitle {
-		font-size: 2.5em;
-		color: #ffcc99;
-		grid-column: 1;
-		grid-row: 8/9;
-		text-align: center;
-	}
-	
-	.footerAboutTitle {
-		font-size: 2em;
-		color: #ffcc99;
-		grid-column: 1;
-		grid-row: 9/10;
-		text-align: center;
-	}
-	
-	.footerAboutInfo {
-		text-align: center;
-		color: white;
-		grid-column: 1;
-		grid-row: 10/13;
-	}
-	
-	.footerContactTitle {
-		text-align: center;
-		font-size: 2em;
-		color: #ffcc99;
-		grid-column: 1;
-		grid-row: 11/12;
-	}
-	
-	.footerContactInfo {
-		text-align: center;
-		color: white;
-		grid-column: 1;
-		grid-row: 12/16;
-	}
+ul {
+  list-style-type: none;
+}
+
+.menu li {
+  font-size: 1rem;
+  padding: 1rem 1rem;
+}
+
+.menu li a {
+  color: var(--txt-color);
+
+  font-weight: bold;
+  display: block;
+}
+
+/* Mobile */
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+
+.toggle {
+  order: 1;
+  /* display: none; */
+}
+
+.nav_item_button {
+  order: 2;
+  width: 100%;
+  text-align: center;
+  /* display: none; */
+}
+
+.nav_item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+
+.nav_item.active {
+  display: block;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+.bars {
+  background-color: var(--txt-color);
+
+  display: inline-block;
+  height: 0.128rem;
+  position: relative;
+
+  width: 1rem;
+}
+
+.bars::before,
+.bars::after {
+  background-color: var(--txt-color);
+  content: "";
+  display: inline-block;
+  height: 0.128rem;
+  position: absolute;
+  width: 1rem;
+}
+
+.bars::before {
+  top: 5px;
+}
+
+.bars::after {
+  top: -5px;
+}
+
+/* tablet */
+@media screen and (min-width: 480px) {
+  .menu {
+    /* justify-content: center; */
+  }
+
+  .nav_logo {
+    /* flex: 1; */
+    align-self: flex-start;
+  }
+
+  .nav_item_button {
+    width: auto;
+    order: 1;
+    display: block;
+    margin-left: auto;
+  }
+
+  .nav_item_button a {
+    padding: 0.5rem 1rem;
+    background-color: var(--main-theme-color);
+    /* color: var(--highlight-light-gray); */
+    border: 0.15rem var(--main-theme-color) solid;
+  }
+
+  .nav_item_button a:hover {
+    transition: 0.25s;
+    background-color: transparent;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 50rem) {
+  .nav_item {
+    display: block;
+    width: auto;
+  }
+  .toggle {
+    display: none;
+  }
+
+  .nav_logo {
+    order: 1;
+    margin-right: auto;
+  }
+
+  .nav_item {
+    order: 3;
+  }
+
+  .nav_item_button {
+    order: 2;
+  }
 }
