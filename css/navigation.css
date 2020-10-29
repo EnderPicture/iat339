@@ -16,6 +16,11 @@
   box-shadow: 0 01px 01px 0 #0001, 0 02px 02px 0 #0001, 0 04px 04px 0 #0001,
     0 08px 08px 0 #0001, 0 16px 16px 0 #0001, 0 32px 32px 0 #0001;
 }
+@media screen and (max-width: 70rem) {
+	.nav {
+		display: none;
+	}
+}
 .nav__logo {
   height: 100%;
   padding: 0.5rem;
