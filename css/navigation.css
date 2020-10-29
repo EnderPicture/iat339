@@ -232,6 +232,10 @@ ul {
     transition: 0.25s;
     background-color: transparent;
   }
+
+  .nav_item {
+      display: unset;
+  }
 }
 
 /* desktop */
