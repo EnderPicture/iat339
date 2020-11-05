@@ -267,7 +267,7 @@ p > code {
 .product-item {
   width: 100%;
 }
-.product-item > a {
+.product-item > a, .product-item > div{
   display: flex;
   background-color: #ffeddf;
   flex-direction: column;
@@ -402,4 +402,10 @@ p > code {
 
 .long-link {
   overflow: hidden;
+}
+.news > article > div {
+  box-shadow: none;
+}
+.news > article > div:hover {
+  box-shadow: none;
 }
