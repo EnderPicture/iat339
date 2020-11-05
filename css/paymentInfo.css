@@ -35,7 +35,7 @@ input {
   /* font-weight: bold; */
   margin-bottom: 1em;
   position: relative;
-  top: -1rem;
+  /*top: -1rem;*/
 }
 
 .userInfo input,
