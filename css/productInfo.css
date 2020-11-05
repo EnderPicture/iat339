@@ -45,16 +45,21 @@
   margin-bottom: auto;
 }
 
-.features_list, .cert {
+.features_list,
+.cert {
   /*Spacing out the list items such that they're more readable*/
   line-height: 1.5rem;
+}
+
+#quantity {
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 70rem) {
   .product_info_box {
     padding: 0;
   }
-  
+
   .product_info_container {
     margin: auto;
   }
