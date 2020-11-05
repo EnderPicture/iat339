@@ -1,18 +1,15 @@
 form#payment {
-    border-radius: 5px;
-    border-radius: .5rem;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 input {
-    border-radius: 5px;
-    margin: 0;
+  margin: 0;
 }
 
 /* .userInfo, .paymentInfo, .paymentChoice, .shippingChoice, .shippingInfo, .action {
@@ -20,61 +17,90 @@ input {
     background-color: rgba(240, 240, 240, 0.75);
 } */
 
-.userInfo label, .paymentInfo label, .shippingInfo label{
-    color: black;
-    display:block;
-    font-weight: bold;
-    margin-bottom: 1em;
+.userInfo label,
+.paymentInfo label,
+.shippingInfo label {
+  color: black;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1em;
+  position: relative;
+  top: 1rem;
 }
 
-.paymentChoice label, .shippingChoice label{
-    margin-right: 10px;
-    color:black;
-    font-weight: bold;
-    margin-bottom: 1em;
+.paymentChoice label,
+.shippingChoice label {
+  margin-right: 10px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 1em;
+  position: relative;
+  top: -1rem;
 }
 
-.userInfo input, .paymentInfo input, .shippingInfo input {
-    background: #fff;
-    /* border: 1px solid #c6c7cc; */
-    /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1); */
-    color: #636466;
-    padding: 0.5em;
-    margin-top: 0.5em;
-    margin-bottom: 1.5em;
-    width: 100%;
+.userInfo input,
+.paymentInfo input,
+.shippingInfo input {
+  background: #fff;
+  border: 0.05rem var(--highlight-dark-gray) solid;
+  color: #636466;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  width: 100%;
 }
 
-.action input{
-    background: linear-gradient(rgb(221, 161, 74), rgb(211, 57, 51));
-    border: 0;
-    color: #fff;
-    cursor: pointer;
-    font-weight: bold;
-    float: left;
-    padding: 1em 2em;
-    margin-right: 1em;
-    margin-bottom: 2em;
+input:hover,
+input:focus {
+  /* box-shadow: 0 0 0 3px #0d132120; */
+
+  border: 0.05rem var(--main-theme-color) solid;
+  transition: 0.1s ease;
+}
+
+input:focus {
+  border: 0.05rem var(--main-theme-color) solid;
+  /*box-shadow: 0 0 0 3px #f45a17; */
+  transition: 0.1s ease;
+  outline: none;
+}
+
+#btn-submit {
+  background: var(--main-theme-color);
+  border: 0.15rem var(--main-theme-color) solid;
+  color: var(--txt-color);
+  cursor: pointer;
+  font-weight: bold;
+  float: left;
+  padding: 0.5rem 1rem;
+  margin-right: 1em;
+  margin-bottom: 2em;
+}
+
+#btn-submit:hover {
+  text-decoration: none;
+  transition: 0.25s;
+  background: transparent;
 }
 
 /*Used the tutorial from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio to come up with the code for this area*/
-.paymentChoice input, .shippingChoice input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+.paymentChoice input,
+.shippingChoice input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 
-    border-radius: 50%;
-    width: 16px;
-    height: 16px;
+  width: 16px;
+  height: 16px;
 
-    /* border: 2px solid #999; */
-    /* transition: 0.2s all linear; */
-    margin-right: 5px;
-    
-    cursor: pointer;
+  /* border: 2px solid #999; */
+  /* transition: 0.2s all linear; */
+  margin-right: 5px;
 
-    position: relative;
-    top: 4px;
+  cursor: pointer;
+
+  position: relative;
+  top: 4px;
 }
 
 /* .paymentChoice input:checked, .shippingChoice input:checked {
@@ -82,23 +108,23 @@ input {
 } */
 
 .checkout-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    margin-top: 5rem;
-    justify-content: center;
-    margin-bottom: 5rem;
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-top: 5rem;
+  justify-content: center;
+  margin-bottom: 5rem;
+  gap: 2rem;
 }
 
 .cart {
-    grid-row: 1;
-    grid-column: 1;
+  grid-row: 1;
+  grid-column: 1;
 }
 
 #payment {
-    grid-row: 1;
-    grid-column: 2;
+  grid-row: 1;
+  grid-column: 2;
 }
 
 /* .checkout-form > *:first-child {
@@ -106,20 +132,19 @@ input {
 } */
 
 @media screen and (max-width: 70em) {
-    .checkout-form {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 4fr;
-    }
-    .cart {
-        
-        min-width: 100%;
-        grid-row: 1;
-        grid-column: 1;
-    }
-    form#payment {
-        margin-left: unset;
-        min-width: 100%;
-        grid-row: 2;
-        grid-column: 1;
-    }
+  .checkout-form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+  }
+  .cart {
+    min-width: 100%;
+    grid-row: 1;
+    grid-column: 1;
+  }
+  form#payment {
+    margin-left: unset;
+    min-width: 100%;
+    grid-row: 2;
+    grid-column: 1;
+  }
 }
