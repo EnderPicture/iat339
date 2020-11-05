@@ -83,6 +83,10 @@ input:focus {
   background: transparent;
 }
 
+.paymentChoice {
+  margin: 2rem 0;
+}
+
 /*Used the tutorial from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio to come up with the code for this area*/
 .paymentChoice input,
 .shippingChoice input {
@@ -101,6 +105,14 @@ input:focus {
 
   position: relative;
   top: 4px;
+}
+
+.paymentChoice input:hover,
+.paymentChoice input:focus,
+.shippingChoice input:hover,
+.shippingChoice input:focus {
+  border-color: var(--main-theme-color);
+  border-width: 0.15rem;
 }
 
 /* .paymentChoice input:checked, .shippingChoice input:checked {
