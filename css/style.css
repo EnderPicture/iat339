@@ -60,7 +60,7 @@ h2::after {
   left: 0;
   height: 100%;
   width: 1rem;
-  background-color: #0d1321;
+  /*background-color: #0d1321;*/
   opacity: 0.1;
 }
 h3 {
