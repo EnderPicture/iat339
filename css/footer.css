@@ -31,6 +31,14 @@
   margin-bottom: auto;
 }
 
+.footerStyleGuide {
+  font-size: 1em;
+  color: #ffffff;
+  grid-row: 4;
+  grid-column: 3/5;
+  margin-left: 2.6rem;
+}
+
 .footerAboutTitle {
   font-size: 2em;
   color: #ffcc99;
@@ -84,10 +92,18 @@
   }
 
   .footerTitle {
+    margin-left: 0;
     font-size: 2.5em;
     color: #ffcc99;
     grid-column: 1;
     grid-row: 5/7;
+    text-align: center;
+  }
+
+  .footerStyleGuide {
+    grid-column: 1;
+    grid-row: 15;
+    margin-left: 0;
     text-align: center;
   }
 
