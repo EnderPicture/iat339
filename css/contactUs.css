@@ -9,7 +9,7 @@ main {
 }
 
 main h1 {
-  font-family: "Roboto Mono", monospace;
+  /* font-family: "Roboto Mono", monospace; */
   font-size: 3em;
   color: var(--main-theme-color);
 }
@@ -37,17 +37,17 @@ main h1 {
 
 .custInfo label,
 .custInfo input {
-  font-family: "Roboto Mono", monospace;
-  font-weight: 400;
+  /* font-family: "Roboto Mono", monospace; */
+  /* font-weight: 400; */
 }
 
 .contactInfo p {
   font-size: 1.25em;
-  font-family: "Roboto Mono", monospace;
+  /* font-family: "Roboto Mono", monospace; */
 }
 
 .contactInfo h2 {
-  font-family: "Roboto Mono", monospace;
+  /* font-family: "Roboto Mono", monospace; */
   font-size: 1.75em;
 }
 

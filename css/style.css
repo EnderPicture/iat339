@@ -226,7 +226,7 @@ form > button {
 label {
   flex-direction: column;
   font-size: 1.2rem;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 input,
 textarea {
@@ -369,7 +369,7 @@ p > code {
   margin-bottom: 0;
   margin-top: 1rem;
   font-size: 1rem;
-  font-weight: 900;
+  /* font-weight: 900; */
   flex: 1;
 }
 .cart__item-price {
