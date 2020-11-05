@@ -42,7 +42,6 @@
 }
 
 .footerAboutTitle {
-  font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-size: 2em;
   color: #ffcc99;
@@ -61,7 +60,6 @@
 
 
 .footerContactTitle {
-  font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-size: 2em;
   color: #ffcc99;
