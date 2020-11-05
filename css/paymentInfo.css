@@ -28,6 +28,7 @@ input {
 }
 
 .paymentChoice label, .shippingChoice label{
+    margin-right: 10px;
     color:black;
     font-weight: bold;
     margin-bottom: 1em;
