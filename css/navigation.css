@@ -7,15 +7,6 @@
   min-width: 2.5em;
 }
 
-:root {
-  /*Default Colours to pull from*/
-  --txt-color: #333333;
-  --main-theme-color: #ff9933;
-  --light-main-theme-color: #ffcc99;
-  --highlight-light-gray: #f2f2f2;
-  --highlight-dark-gray: #858889;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;

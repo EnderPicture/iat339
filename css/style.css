@@ -16,7 +16,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Open Sans", monospace;
+  font-family: "Open Sans", sans-serif;
   color: var(--txt-color);
   scroll-behavior: smooth;
 }
