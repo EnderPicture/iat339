@@ -49,10 +49,15 @@
 .cert {
   /*Spacing out the list items such that they're more readable*/
   line-height: 1.5rem;
+  list-style-type: disc;
 }
 
 #quantity {
   font-size: 1rem;
+}
+
+#data-sheet {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 70rem) {

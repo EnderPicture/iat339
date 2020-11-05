@@ -20,7 +20,7 @@ input {
 .userInfo label,
 .paymentInfo label,
 .shippingInfo label {
-  color: black;
+  color: var(--txt-color);
   display: block;
   /* font-weight: bold; */
   margin-bottom: 1em;
@@ -31,7 +31,7 @@ input {
 .paymentChoice label,
 .shippingChoice label {
   margin-right: 10px;
-  color: black;
+  color: var(--txt-color);
   /* font-weight: bold; */
   margin-bottom: 1em;
   position: relative;
