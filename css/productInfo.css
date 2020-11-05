@@ -24,23 +24,15 @@
 
 /* product info container */
 .product_info_container {
-  /* display: flex;
-  flex-wrap: wrap; */
   justify-content: space-between;
 }
 
 .product_info_box {
-  /* width: 60vw; */
-
-  /* min-width: 30rem; */
-  /* width: 60%; */
   flex: 1;
   padding: 0 2rem;
 }
 
 .product_img_box {
-  /* width: 40%; */
-  /* min-width: 30rem; */
   height: auto;
   display: inline-flex;
   align-content: center;
@@ -48,10 +40,14 @@
 }
 
 .product_img_box img {
-  /* width: 40%; */
   object-fit: contain;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.features_list, .cert {
+  /*Spacing out the list items such that they're more readable*/
+  line-height: 1.5rem;
 }
 
 @media screen and (max-width: 70rem) {

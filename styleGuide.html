@@ -4,43 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/navigation.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel = "stylesheet" href = "css/paymentInfo.css">
     <title>Style Guide</title>
   </head>
 
   <!-- used this https://www.phpjunkyard.com/tools/text-to-html.php to convert code into html text -->
 
   <body>
-    <!-- <nav class="nav">
-      <div class="mid">
-        <a href="index.html">Products</a>
-        <a href="aboutus-news.html">About Us</a>
-        <a href="contact-us.html"> Contact Us</a>
-        <a href="checkout.html">Checkout</a>
-        <a href="styleGuide.html">Style Guide</a>
-        <div class="spacer"></div>
-        <img
-          class="nav__logo"
-          src="img/escudo-power-logo.svg"
-          alt="Escudo Power Logo"
-        />
-      </div>
-    </nav> -->
     <!-- NEW NAV -->
 
     <nav class="nav">
-      <!-- <a href="index.html"
-        ><img
-          class="nav_logo"
-          src="img/escudo-power-logo.svg"
-          alt="Escudo Power Logo"
-      /></a> -->
       <ul class="menu">
         <li class="nav_logo">
           <a href="index.html">
-            <img src="img/escudo-power-logo.svg" alt="Escudo Power Logo">
+            <img src="img/escudo-power-logo.svg" alt="Escudo Power Logo" />
             <!--Logo-->
           </a>
         </li>
@@ -52,9 +32,8 @@
           <a href="contact-us.html"> Contact Us</a>
         </li>
         <li class="toggle">
-          <span class="bars"></span>
+          <span onclick="openNavBar()" class="bars"></span>
         </li>
-        <!-- <li><a href="styleGuide.html">Style Guide</a></li> -->
       </ul>
     </nav>
 
@@ -64,8 +43,8 @@
         alt=""
       />
       <article class="cover__overlay">
-        <p class="mid">escudo power</p>
-        <h1 class="mid">style guide</h1>
+        <p class="mid">Escudo Power</p>
+        <h1 class="mid">Style Guide</h1>
       </article>
     </header>
 
@@ -174,24 +153,48 @@
 
       <article>
         <h3>Navigation link</h3>
-        <nav class="nav">
-          <div class="mid">
-            <a href="#style">Styling</a>
-            <a href="#interact">Interactive</a>
-            <a href="#combined">Combined</a>
-          </div>
+        <nav class="nav1">
+          <ul class="menu">
+            <li class="nav_logo">
+              <a href="index.html">
+                <img src="img/escudo-power-logo.svg" alt="Escudo Power Logo">
+                <!--Logo-->
+              </a>
+            </li>
+            <li class="nav_item"><a href="#style">Styling</a></li>
+            <li class="nav_item"><a href="#interact">Interactive</a></li>
+    
+            <li class="nav_item"><a href="#combined">Combined</a></li>
+            <li class="nav_item_button">
+              <a href="contact-us.html"> Contact Us</a>
+            </li>
+            <li class="toggle">
+                <span onclick = "openNavBar()" class="bars"></span>
+            </li>
+          </ul>
         </nav>
         <p>CSS: <code>nav</code></p>
         <p>CSS: <code>nav > a</code></p>
         <p>HTML:</p>
         <pre>
                 <code>
-&lt;nav class=&quot;nav&quot;&gt;
-    &lt;div class=&quot;mid&quot;&gt;
-        &lt;a href=&quot;#style&quot;&gt;Styling&lt;/a&gt;
-        &lt;a href=&quot;#interact&quot;&gt;Interactive&lt;/a&gt;
-        &lt;a href=&quot;#combined&quot;&gt;Combined&lt;/a&gt;
-    &lt;/div&gt;
+&lt;nav class=&quot;nav1&quot;&gt;
+  &lt;ul class=&quot;menu&quot;&gt;
+    &lt;li class = "nav_logo"&gt;
+      &lt;a href = "index.html"&gt;
+        &lt;img src = "img/escudo-power-logo.svg" alt = "Escudo Power Logo"&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class = "nav_item"&gt;&lt;a href=&quot;#style&quot;&gt;Styling&lt;/a&gt;&lt;/li&gt;
+    &lt;li class = "nav_item"&gt;&lt;a href=&quot;#interact&quot;&gt;Interactive&lt;/a&gt;&lt;/li&gt;
+    &lt;li class = "nav_item"&gt;&lt;a href=&quot;#combined&quot;&gt;Combined&lt;/a&gt;&lt;/li&gt;
+    &lt;li class = "nav_item_button"&gt;
+      &lt;a href = "contact-us.html"&gt; Contact Us&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class = "toggle"&gt;
+      &lt;span onclick = "openNavBar()" class = "bars"&gt;&lt;/span&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/nav&gt;</code>
                 </pre>
       </article>
@@ -297,31 +300,47 @@
 
       <article>
         <h3>Navigation</h3>
-        <nav class="nav">
-          <div class="mid">
-            <a href="#style">Styling</a>
-            <a href="#interact">Interactive</a>
-            <a href="#combined">Combined</a>
-            <div class="spacer"></div>
-            <img
-              class="nav__logo"
-              src="img/escudo-power-logo.svg"
-              alt="Escudo Power Logo"
-            />
-          </div>
+        <nav class="nav1">
+          <ul class="menu">
+            <li class="nav_logo">
+              <a href="index.html">
+                <img src="img/escudo-power-logo.svg" alt="Escudo Power Logo">
+                <!--Logo-->
+              </a>
+            </li>
+            <li class="nav_item"><a href="#style">Styling</a></li>
+            <li class="nav_item"><a href="#interact">Interactive</a></li>
+    
+            <li class="nav_item"><a href="#combined">Combined</a></li>
+            <li class="nav_item_button">
+              <a href="contact-us.html"> Contact Us</a>
+            </li>
+            <li class="toggle">
+                <span onclick = "openNavBar()" class="bars"></span>
+            </li>
+          </ul>
         </nav>
         <p>CSS: <code>nav</code></p>
         <p>HTML:</p>
         <pre>
                 <code>
-&lt;nav class=&quot;nav&quot;&gt;
-    &lt;div class=&quot;mid&quot;&gt;
-        &lt;a href=&quot;#style&quot;&gt;Styling&lt;/a&gt;
-        &lt;a href=&quot;#interact&quot;&gt;Interactive&lt;/a&gt;
-        &lt;a href=&quot;#combined&quot;&gt;Combined&lt;/a&gt;
-        &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
-        &lt;img class=&quot;nav__logo&quot; src=&quot;img/escudo-power-logo.svg&quot; alt=&quot;Escudo Power Logo&quot;&gt;
-    &lt;/div&gt;
+&lt;nav class=&quot;nav1&quot;&gt;
+  &lt;ul class=&quot;menu&quot;&gt;
+    &lt;li class = "nav_logo"&gt;
+      &lt;a href = "index.html"&gt;
+        &lt;img src = "img/escudo-power-logo.svg" alt = "Escudo Power Logo"&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class = "nav_item"&gt;&lt;a href=&quot;#style&quot;&gt;Styling&lt;/a&gt;&lt;/li&gt;
+    &lt;li class = "nav_item"&gt;&lt;a href=&quot;#interact&quot;&gt;Interactive&lt;/a&gt;&lt;/li&gt;
+    &lt;li class = "nav_item"&gt;&lt;a href=&quot;#combined&quot;&gt;Combined&lt;/a&gt;&lt;/li&gt;
+    &lt;li class = "nav_item_button"&gt;
+      &lt;a href = "contact-us.html"&gt; Contact Us&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class = "toggle"&gt;
+      &lt;span onclick = "openNavBar()" class = "bars"&gt;&lt;/span&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/nav&gt;</code>
                 </pre>
       </article>
@@ -373,69 +392,107 @@
 
       <article>
         <h3>Payment form</h3>
-        <form class="pay-form" action="#">
-          <h4>Payment</h4>
-          <label>
-            Card number
-            <input type="number" />
-          </label>
-          <label>
-            Expiery date
-            <input type="number" />
-          </label>
-          <label>
-            VCC
-            <input type="number" />
-          </label>
-          <h4>Shipping</h4>
-          <label>
-            Ultra fast
-            <input type="radio" name="shipping" />
-          </label>
-          <label>
-            Kinda fast
-            <input type="radio" name="shipping" />
-          </label>
-          <label>
-            Slow
-            <input type="radio" name="shipping" />
-          </label>
-          <button class="btn-submit" type="submit">Submit</button>
-          <button class="btn-reset" type="reset">Reset</button>
+        <form id="payment">
+          <fieldset class="userInfo">
+            <label for="formFN">First Name:</label>
+            <input type="text" id="formFN" required />
+  
+            <label for="formLN">Last Name:</label>
+            <input type="text" id="formLN" required />
+          </fieldset>
+  
+          <fieldset class="paymentChoice">
+            <label for="formCreditCard">Credit Card</label>
+            <input
+              type="radio"
+              id="formCreditCard"
+              name="payment"
+              value="credit-card"
+              checked
+            /><br />
+            <label for="formPayPal">PayPal</label>
+            <input type="radio" id="formPayPal" name="payment" value="paypal" />
+          </fieldset>
+  
+          <fieldset class="paymentInfo">
+            <label for="formCreditNum">Credit Card Number</label>
+            <input type="number" id="formCreditNum" /><br />
+            <label for="formCreditCVV">Credit Card CVV</label>
+            <input type="number" id="formCreditCVV" max="999" /><br />
+            <label for="formCreditDate">Expiration Date</label>
+            <input type="month" id="formCreditDate" /><br />
+          </fieldset>
+  
+          <fieldset class="shippingChoice">
+            <label for="formCheapShip">Cheap but slow Shipping</label>
+            <input
+              type="radio"
+              id="formCheapShip"
+              name="shipping"
+              value="cheapShipping"
+              checked
+            /><br />
+            <label for="formExpenShip">Expensive but fast Shipping</label>
+            <input
+              type="radio"
+              id="formExpenShip"
+              name="shipping"
+              value="expensiveShipping"
+            />
+          </fieldset>
+  
+          <fieldset class="shippingInfo">
+            <label for="address">Shipping Address</label>
+            <input type="text" name="address" id="address" required /><br />
+  
+            <label for="province">Province</label>
+            <input type="text" name="province" id="province" required /><br />
+          </fieldset>
+  
+          <fieldset class="action">
+            <input type="submit" />
+            <input type="reset" />
+          </fieldset>
         </form>
         <p>CSS: <code>.pay-form</code></p>
         <p>HTML:</p>
         <pre>
                 <code>
-&lt;form class=&quot;pay-form&quot; action=&quot;#&quot;&gt;
-    &lt;h4&gt;Payment&lt;/h4&gt;
-    &lt;label&gt;
-        Card number
-        &lt;input type=&quot;number&quot; /&gt;
-    &lt;/label&gt;
-    &lt;label&gt;
-        Expiery date
-        &lt;input type=&quot;number&quot; /&gt;
-    &lt;/label&gt;
-    &lt;label&gt;
-        VCC
-        &lt;input type=&quot;number&quot; /&gt;
-    &lt;/label&gt;
-    &lt;h4&gt;Shipping&lt;/h4&gt;
-    &lt;label&gt;
-        Ultra fast
-        &lt;input type=&quot;radio&quot; name=&quot;shipping&quot; /&gt;
-    &lt;/label&gt;
-    &lt;label&gt;
-        Kinda fast
-        &lt;input type=&quot;radio&quot; name=&quot;shipping&quot; /&gt;
-    &lt;/label&gt;
-    &lt;label&gt;
-        Slow
-        &lt;input type=&quot;radio&quot; name=&quot;shipping&quot; /&gt;
-    &lt;/label&gt;
-    &lt;button class=&quot;btn-submit&quot; type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
-    &lt;button class=&quot;btn-reset&quot; type=&quot;reset&quot;&gt;Reset&lt;/button&gt;
+&lt;form id=&quot;payment&quot;&gt;
+  &lt;fieldset class=&quot;userInfo&quot;&gt;
+    &lt;label for=&quot;formFN&quot;&gt;First Name:&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;formFN&quot; required /&gt; 
+    &lt;label for=&quot;formLN&quot;&gt;Last Name:&lt;/label&gt; 
+    &lt;input type=&quot;text&quot; id=&quot;formLN&quot; required /&gt; 
+  &lt;/fieldset&gt; 
+  &lt;fieldset class=&quot;paymentChoice&quot;&gt;
+    &lt;label for=&quot;formCreditCard&quot;&gt;Credit Card&lt;/label&gt; 
+    &lt;input type=&quot;radio&quot; id=&quot;formCreditCard&quot; name=&quot;payment&quot; value=&quot;credit-card&quot; checked /&gt;&lt;br /&gt; 
+    &lt;label for=&quot;formPayPal&quot;&gt;PayPal&lt;/label&gt; 
+    &lt;input type=&quot;radio&quot; id=&quot;formPayPal&quot; name=&quot;payment&quot; value=&quot;paypal&quot; /&gt; 
+  &lt;/fieldset&gt; 
+  &lt;fieldset class=&quot;paymentInfo&quot;&gt;
+    &lt;label for=&quot;formCreditNum&quot;&gt;Credit Card Number&lt;/label&gt; 
+    &lt;input type=&quot;number&quot; id=&quot;formCreditNum&quot; /&gt;&lt;br /&gt; 
+    &lt;label for=&quot;formCreditCVV&quot;&gt;Credit Card CVV&lt;/label&gt; 
+    &lt;input type=&quot;number&quot; id=&quot;formCreditCVV&quot; max=&quot;999&quot; /&gt;&lt;br /&gt; 
+    &lt;label for=&quot;formCreditDate&quot;&gt;Expiration Date&lt;/label&gt; 
+    &lt;input type=&quot;month&quot; id=&quot;formCreditDate&quot; /&gt;&lt;br /&gt; 
+  &lt;/fieldset&gt; 
+  &lt;fieldset class=&quot;shippingChoice&quot;&gt;
+    &lt;label for=&quot;formCheapShip&quot;&gt;Cheap but slow Shipping&lt;/label&gt; 
+    &lt;input type=&quot;radio&quot; id=&quot;formCheapShip&quot; name=&quot;shipping&quot; value=&quot;cheapShipping&quot; checked /&gt;&lt;br /&gt; 
+    &lt;label for=&quot;formExpenShip&quot;&gt;Expensive but fast Shipping&lt;/label&gt; 
+    &lt;input type=&quot;radio&quot; id=&quot;formExpenShip&quot; name=&quot;shipping&quot; value=&quot;expensiveShipping&quot; /&gt; 
+  &lt;/fieldset&gt; 
+  &lt;fieldset class=&quot;shippingInfo&quot;&gt; 
+    &lt;label for=&quot;address&quot;&gt;Shipping Address&lt;/label&gt; 
+    &lt;input type=&quot;text&quot; name=&quot;address&quot; id=&quot;address&quot; required /&gt;&lt;br /&gt; 
+    &lt;label for=&quot;province&quot;&gt;Province&lt;/label&gt; 
+    &lt;input type=&quot;text&quot; name=&quot;province&quot; id=&quot;province&quot; required /&gt;&lt;br /&gt; 
+    &lt;/fieldset&gt; &lt;fieldset class=&quot;action&quot;&gt; &lt;input type=&quot;submit&quot; /&gt; 
+    &lt;input type=&quot;reset&quot; /&gt; 
+  &lt;/fieldset&gt; 
 &lt;/form&gt;</code>
                 </pre>
       </article>
@@ -699,17 +756,26 @@
         />
       </svg>
       <h2 class="footerTitle">Products and Services</h2>
+      <a href = "styleGuide.html" class = "footerStyleGuide">Style Guide</a>
       <a href="aboutus-news.html" class="footerAboutTitle">About Us</a>
       <p class="footerAboutInfo">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        Using the concept of INNOVATION BY DESIGN we provide Electronics
+        Engineering Solutions for tomorrow and Emerging Technologies for local
+        an international customers. We could help CONNECTING YOUR BUSINESS TO
+        THE TECHNOLOGY RESOURCES YOU NEED.
       </p>
       <a href="contact-us.html" class="footerContactTitle">Contact Us</a>
       <p class="footerContactInfo">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        Phone Number<br />
+        604-315-7323<br />
+        Address<br />
+        208 - 2323 Boundary Road,<br />
+        Vancouver BC V5M 4V8<br />
+        Office Hours<br />
+        Monday - Friday 8am - 5pm<br />
+        Closed Saturday and Sunday
       </p>
     </footer>
-    <script src = "js/hamburger.js"></script>
+    <script src="js/hamburger.js"></script>
   </body>
 </html>

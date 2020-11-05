@@ -15,10 +15,10 @@ input {
     margin: 0;
 }
 
-.userInfo, .paymentInfo, .paymentChoice, .shippingChoice, .shippingInfo, .action {
-    /* padding: 2em 2em 0 2em; */
+/* .userInfo, .paymentInfo, .paymentChoice, .shippingChoice, .shippingInfo, .action {
+    padding: 2em 2em 0 2em;
     background-color: rgba(240, 240, 240, 0.75);
-}
+} */
 
 .userInfo label, .paymentInfo label, .shippingInfo label{
     color: black;
@@ -28,6 +28,7 @@ input {
 }
 
 .paymentChoice label, .shippingChoice label{
+    margin-right: 10px;
     color:black;
     font-weight: bold;
     margin-bottom: 1em;

@@ -13,47 +13,24 @@
   <!-- used this https://www.phpjunkyard.com/tools/text-to-html.php to convert code into html text -->
 
   <body>
-    <!-- <nav class="nav">
-      <div class="mid">
-        <a href="index.html">Products</a>
-        <a href="aboutus-news.html">About Us</a>
-        <a href="contact-us.html"> Contact Us</a>
-        <a href="checkout.html">Checkout</a>
-        <a href="styleGuide.html">Style Guide</a>
-        <div class="spacer"></div>
-        <img
-          class="nav__logo"
-          src="img/escudo-power-logo.svg"
-          alt="Escudo Power Logo"
-        />
-      </div>
-    </nav> -->
-
     <!-- NEW NAV -->
 
     <nav class="nav">
-      <!-- <a href="index.html"
-        ><img
-          class="nav_logo"
-          src="img/escudo-power-logo.svg"
-          alt="Escudo Power Logo"
-      /></a> -->
       <ul class="menu">
         <li class="nav_logo">
           <a href="index.html">
-            <img src="img/escudo-power-logo.svg" alt="Escudo Power Logo">
+            <img src="img/escudo-power-logo.svg" alt="Escudo Power Logo" />
             <!--Logo-->
           </a>
         </li>
         <li class="nav_item"><a href="index.html">Products</a></li>
         <li class="nav_item"><a href="aboutus-news.html">About Us</a></li>
-
         <li class="nav_item"><a href="checkout.html">Checkout</a></li>
         <li class="nav_item_button">
           <a href="contact-us.html"> Contact Us</a>
         </li>
         <li class="toggle">
-          <span class="bars"></span>
+          <span onclick="openNavBar()" class="bars"></span>
         </li>
         <!-- <li><a href="styleGuide.html">Style Guide</a></li> -->
       </ul>
@@ -65,7 +42,7 @@
         alt=""
       />
       <article class="cover__overlay">
-        <p class="mid">escudo power</p>
+        <p class="mid">Escudo Power</p>
         <h1 class="mid">About Us</h1>
       </article>
     </header>
@@ -73,32 +50,9 @@
     <section class="mid" id="style">
       <h2>Who are we</h2>
       <p>
-        Placeholder before the development of power semiconductors and allied
-        technologies, one way to convert the voltage of a DC supply to a higher
-        voltage, for low-power applications, was to convert it to AC by using a
-        vibrator, followed by a step-up transformer and rectifier.[1][2] For
-        higher power an electric motor was used to drive a generator of the
-        desired voltage (sometimes combined into a single "dynamotor" unit, a
-        motor and generator combined into one unit, with one winding driving the
-        motor and the other generating the output voltage). These were
-        relatively inefficient and expensive procedures used only when there was
-        no alternative, as to power a car radio (which then used thermionic
-        valves/tubes requiring much higher voltages than available from a 6 or
-        12 V car battery).[1] The introduction of power semiconductors and
-        integrated circuits made it economically viable to use techniques as
-        described below. For example, to convert the DC power supply to
-        high-frequency AC, use a transformer — small, light, and cheap due to
-        the high frequency — to change the voltage, and rectify back to DC.[3]
-        Although by 1976 transistor car radio receivers did not require high
-        voltages, some amateur radio operators continued to use vibrator
-        supplies and dynamotors for mobile transceivers requiring high voltages
-        although transistorized power supplies were available.[4]
-      </p>
-      <p>
-        While it was possible to derive a lower voltage from a higher with a
-        linear regulator or even a resistor, these methods dissipated the excess
-        as heat; energy-efficient conversion only became possible with
-        solid-state switch-mode circuits. wikipedia on dc-dc converters
+        Using the concept of INNOVATION BY DESIGN we provide Electronics
+        Engineering Solutions for tomorrow and Emerging Technologies for local
+        an international customers.
       </p>
     </section>
 
@@ -314,17 +268,26 @@
         />
       </svg>
       <h2 class="footerTitle">Products and Services</h2>
+      <a href = "styleGuide.html" class = "footerStyleGuide">Style Guide</a>
       <a href="aboutus-news.html" class="footerAboutTitle">About Us</a>
       <p class="footerAboutInfo">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        Using the concept of INNOVATION BY DESIGN we provide Electronics
+        Engineering Solutions for tomorrow and Emerging Technologies for local
+        an international customers. We could help CONNECTING YOUR BUSINESS TO
+        THE TECHNOLOGY RESOURCES YOU NEED.
       </p>
       <a href="contact-us.html" class="footerContactTitle">Contact Us</a>
       <p class="footerContactInfo">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        Phone Number<br />
+        604-315-7323<br />
+        Address<br />
+        208 - 2323 Boundary Road,<br />
+        Vancouver BC V5M 4V8<br />
+        Office Hours<br />
+        Monday - Friday 8am - 5pm<br />
+        Closed Saturday and Sunday
       </p>
     </footer>
-    <script src = "js/hamburger.js"></script>
+    <script src="js/hamburger.js"></script>
   </body>
 </html>

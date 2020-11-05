@@ -18,6 +18,8 @@ main h1 {
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 1fr;
+    height: 100%;
+    margin-bottom: 10em;
 }
 
 .contactInfo {
@@ -40,13 +42,11 @@ main h1 {
 }
 
 .contactInfo p {
-    
     font-size: 1.25em;
     font-family: 'Roboto Mono', monospace;
 }
 
 .contactInfo h2 {
-    background-color: #ffffff;
     font-family: 'Roboto Mono', monospace;
     font-size: 1.75em;
 }
@@ -103,6 +103,21 @@ textarea:focus {
 }
 
 @media screen and (max-width: 44rem) {
+    main {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contactInfo {
+        margin-left: 1em;
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+    }
+
     .contact-us-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 3fr 2fr;
