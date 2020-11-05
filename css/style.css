@@ -115,6 +115,7 @@ a:focus {
 }
 .cover {
   height: 40vh;
+  min-height: 17rem;
   overflow: hidden;
   position: relative;
 }
