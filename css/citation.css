@@ -1,0 +1,12 @@
+.citations-list {
+  margin: 5rem 0;
+}
+
+.citations-list li {
+  list-style-type: circle;
+}
+
+main {
+  height: fit-content;
+  line-height: 200%;
+}
