@@ -1,3 +1,7 @@
+body {
+  min-height: 100%;
+}
+
 .citations-list {
   margin: 5rem 0;
 }
@@ -8,10 +12,16 @@
 
 main {
   height: fit-content;
+
   line-height: 200%;
 }
 
 .setToBottom {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+a {
+  word-wrap: break-word;
 }
