@@ -10,3 +10,8 @@ main {
   height: fit-content;
   line-height: 200%;
 }
+
+.setToBottom {
+    position: absolute;
+    bottom: 0;
+}
