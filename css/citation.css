@@ -23,5 +23,12 @@ main {
 }
 
 a {
+  width: 100%;
   word-wrap: break-word;
+}
+
+@media screen and (max-width: 44rem) {
+  .setToBottom {
+    position: relative;
+  }
 }
