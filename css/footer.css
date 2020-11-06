@@ -47,6 +47,11 @@
   grid-column: 4/5;
 }
 
+.footerCitations:hover,
+.footerStyleGuide:hover {
+  color: var(--main-theme-color);
+}
+
 .footerAboutTitle {
   font-weight: 400;
   font-size: 2em;
